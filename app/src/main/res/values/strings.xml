@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">nourishingfarmsalpha</string>
+    <string name="logo_splash_screen">Logo - Splash Screen</string>
+    <string name="tag_line">A Farmer\'s Companion</string>
+    <string name="hello">Hello</string>
+    <string name="menunavbar">menuNavbar</string>
+    <string name="foodie">foodie!</string>
+    <string name="which_food_would_you_like_to_cook">Which food would you like to cook?</string>
+    <string name="search_recipe">Search recipe</string>
+    <string name="categories">Categories</string>
+    <string name="salad">Salad</string>
+    <string name="juice">Juice</string>
+    <string name="drinks">Drinks</string>
+    <string name="dessert">Dessert</string>
+    <string name="popular_recipes">Popular Recipes</string>
+</resources>
