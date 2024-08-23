@@ -41,7 +41,6 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
         String imageUrl = currentItem.get("image");
 
         holder.popularTxt.setText(title);
-        holder.popularTime.setText(time);
 
         // Use Glide to load the image
         Glide.with(context)
@@ -55,13 +54,12 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
     }
 
     public static class RecipeViewHolder extends RecyclerView.ViewHolder {
-        TextView popularTxt, popularTime;
+        TextView popularTxt;
         ImageView popularImg;
 
         public RecipeViewHolder(@NonNull View itemView) {
             super(itemView);
             popularTxt = itemView.findViewById(R.id.popular_txt);
-            popularTime = itemView.findViewById(R.id.popular_time);
             popularImg = itemView.findViewById(R.id.popular_img);
         }
     }

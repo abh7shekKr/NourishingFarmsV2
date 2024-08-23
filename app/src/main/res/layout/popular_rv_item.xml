@@ -24,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_gravity="bottom"
-        android:src="@drawable/image_btm_overlay"/>
+        android:src="@drawable/image_btm_overlay"
+        android:backgroundTint="@color/black"/>
 
     <TextView
         android:id="@+id/popular_txt"
@@ -36,21 +37,21 @@
         android:fontFamily="@font/poppins"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
-        android:paddingBottom="22dp"
+        android:paddingBottom="8dp"
         android:layout_gravity="bottom"/>
 
-    <TextView
-        android:id="@+id/popular_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:textColor="@color/white"
-        android:text="20 Mins"
-        android:layout_marginStart="15dp"
-        android:textSize="11sp"
-        android:fontFamily="@font/poppins"
-        android:maxLength="7"
-        android:layout_marginBottom="7dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/popular_time"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="20 Mins"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:textSize="11sp"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        android:maxLength="7"-->
+<!--        android:layout_marginBottom="7dp"/>-->
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

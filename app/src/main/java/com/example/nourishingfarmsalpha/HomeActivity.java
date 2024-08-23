@@ -1,6 +1,9 @@
 package com.example.nourishingfarmsalpha;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,11 +16,19 @@ public class HomeActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecipeAdapter recipeAdapter;
+    EditText search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        findViewById(R.id.search).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, SearchActivity.class));
+            }
+        });
 
         // Initialize the RecyclerView
         recyclerView = findViewById(R.id.recyclerView);
