@@ -148,7 +148,7 @@
                 android:textSize="16sp" />
 
             <ImageView
-                android:id="@+id/salads1"
+                android:id="@+id/salad"
                 style="@style/my_style"
                 android:layout_marginStart="17dp"
                 android:layout_toEndOf="@id/bread1"
@@ -159,9 +159,9 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/salads1"
-                android:layout_alignStart="@id/salads1"
-                android:layout_alignEnd="@id/salads1"
+                android:layout_below="@id/salad"
+                android:layout_alignStart="@id/salad"
+                android:layout_alignEnd="@id/salad"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="-23dp"
                 android:fontFamily="@font/poppins"
@@ -174,7 +174,7 @@
                 android:id="@+id/sandwiches1"
                 style="@style/my_style"
                 android:layout_marginStart="17dp"
-                android:layout_toEndOf="@id/salads1"
+                android:layout_toEndOf="@id/salad"
                 android:background="@drawable/category_card_bc"
                 app:srcCompat="@drawable/sandwiches" />
 
@@ -342,35 +342,40 @@
                 android:layout_height="28dp"
                 android:layout_weight="1"
                 android:contentDescription="gallery icon"
-                android:src="@drawable/icongallery2" />
+                android:src="@drawable/icongallery2"
+                app:tint="#444444" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_weight="1"
                 android:contentDescription="sop icon"
-                android:src="@drawable/iconchef" />
+                android:src="@drawable/iconchef"
+                app:tint="#444444"/>
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_weight="1"
                 android:contentDescription="home icon"
-                android:src="@drawable/iconhome" />
+                android:src="@drawable/iconhome"
+                app:tint="@color/primary_color2"/>
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_weight="1"
                 android:contentDescription="recipe icon"
-                android:src="@drawable/iconrecipe5" />
+                android:src="@drawable/iconrecipe5"
+                app:tint="#444444"/>
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_weight="1"
                 android:contentDescription="user icon"
-                android:src="@drawable/iconuser2" />
+                android:src="@drawable/iconuser2"
+                app:tint="#444444"/>
         </LinearLayout>
 
     </RelativeLayout>

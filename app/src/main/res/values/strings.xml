@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">nourishingfarmsalpha</string>
     <string name="logo_splash_screen">Logo - Splash Screen</string>
-    <string name="tag_line">A Farmer\'s Companion</string>
+    <string name="tag_line">From Farm To Fork</string>
     <string name="hello">Hello</string>
     <string name="menunavbar">menuNavbar</string>
     <string name="foodie">foodie!</string>

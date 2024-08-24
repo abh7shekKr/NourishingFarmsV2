@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,12 +17,117 @@ public class HomeActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecipeAdapter recipeAdapter;
-    EditText search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        //bread category
+        ImageView breadImageView = findViewById(R.id.bread1);
+
+        breadImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+
+                // Pass the ID of the ImageView as an extra (in this case, as a food category)
+                intent.putExtra("foodCategory", "bread");
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+        //salad category
+        ImageView saladsImageView = findViewById(R.id.salad);
+
+        saladsImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+
+                // Pass the ID of the ImageView as an extra (in this case, as a food category)
+                intent.putExtra("foodCategory", "salad");
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+        //sandwich category
+        ImageView sandwichImageView = findViewById(R.id.sandwiches1);
+
+        sandwichImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+
+                // Pass the ID of the ImageView as an extra (in this case, as a food category)
+                intent.putExtra("foodCategory", "sandwich");
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+        //juices category
+        ImageView juicesImageView = findViewById(R.id.juices1);
+
+        juicesImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+
+                // Pass the ID of the ImageView as an extra (in this case, as a food category)
+                intent.putExtra("foodCategory", "juice");
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+        //soup category
+        ImageView soupImageView = findViewById(R.id.soups1);
+
+        soupImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+
+                // Pass the ID of the ImageView as an extra (in this case, as a food category)
+                intent.putExtra("foodCategory", "soup");
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+        //veggies category
+        ImageView veggiesImageView = findViewById(R.id.veggies);
+
+        veggiesImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+
+                // Pass the ID of the ImageView as an extra (in this case, as a food category)
+                intent.putExtra("foodCategory", "veggies");
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
         findViewById(R.id.search).setOnClickListener(new View.OnClickListener() {
             @Override

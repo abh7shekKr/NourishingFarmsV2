@@ -2,8 +2,10 @@ package com.example.nourishingfarmsalpha;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -29,7 +31,7 @@ public class SearchActivity extends AppCompatActivity {
 
         // Create the filtered data list with the first 4-5 items as default
         filteredDataList = new ArrayList<>();
-        int initialItemCount = Math.min(fullDataList.size(), 5);  // Show 4-5 items by default
+        int initialItemCount = Math.min(fullDataList.size(), 8);  // Show 4-5 items by default
         filteredDataList.addAll(fullDataList.subList(0, initialItemCount));
 
         // Set up the RecyclerView
@@ -51,6 +53,14 @@ public class SearchActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable editable) {}
+        });
+
+        ImageView goBackHome = findViewById(R.id.go_back_home);
+        goBackHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();  // Go back to the previous activity
+            }
         });
 
         // Request focus and show keyboard
