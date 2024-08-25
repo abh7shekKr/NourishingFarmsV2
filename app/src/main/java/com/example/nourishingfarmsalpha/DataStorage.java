@@ -10,13 +10,13 @@ public class DataStorage {
     public DataStorage() {
         dataTable = new ArrayList<>();
 
-        HashMap<String, String> row1 = new HashMap<>();
-        row1.put("id", "1");
-        row1.put("title", "Spiced Indian Salad");
-        row1.put("ingredients", "Spicy Checkpeas, Beetroot, Pomegranate, Spicy Walnut");
-        row1.put("category", "salad");
-        row1.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
-        dataTable.add(row1);
+//        HashMap<String, String> row1 = new HashMap<>();
+//        row1.put("id", "1");
+//        row1.put("title", "Spiced Indian Salad");
+//        row1.put("ingredients", "Spicy Checkpeas, Beetroot, Pomegranate, Spicy Walnut");
+//        row1.put("category", "salad");
+//        row1.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+//        dataTable.add(row1);
 
         HashMap<String, String> row2 = new HashMap<>();
         row2.put("id", "2");

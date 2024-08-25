@@ -8,6 +8,9 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class RecipeActivity extends AppCompatActivity {
 
     private boolean isFitCenter = true;
@@ -21,11 +24,25 @@ public class RecipeActivity extends AppCompatActivity {
         // Get the title text from the Intent
         String recipeTitle = getIntent().getStringExtra("recipeTitle");
 
-        // Use the title text (e.g., set it as a title for a TextView)
+        // Set the title in the TextView
         TextView titleTextView = findViewById(R.id.title_recipe_page);
         titleTextView.setText(recipeTitle);
 
+        // Get the ingredients based on the title
+        DataStorage dataStorage = new DataStorage();
+        ArrayList<HashMap<String, String>> dataTable = dataStorage.getDataTable();
+        String ingredients = "";
 
+        for (HashMap<String, String> item : dataTable) {
+            if (item.get("title").equals(recipeTitle)) {
+                ingredients = item.get("ingredients");
+                break;
+            }
+        }
+
+        // Set the ingredients in the corresponding TextView
+        TextView ingredientsTextView = findViewById(R.id.ing_data);
+        ingredientsTextView.setText(ingredients);
 
         ImageView imageView = findViewById(R.id.item_img);
 
@@ -41,7 +58,12 @@ public class RecipeActivity extends AppCompatActivity {
             }
         });
 
-
-
+        ImageView backButton = findViewById(R.id.back_btn);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // Closes the current activity and returns to the previous one
+            }
+        });
     }
 }
