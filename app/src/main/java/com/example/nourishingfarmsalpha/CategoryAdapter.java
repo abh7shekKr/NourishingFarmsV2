@@ -1,5 +1,6 @@
 package com.example.nourishingfarmsalpha;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,19 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         Glide.with(holder.itemView.getContext())
                 .load(currentItem.get("image"))
                 .into(holder.recipeImage);
+
+        // Set an OnClickListener on the itemView
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an intent to open the new activity
+                Intent intent = new Intent(holder.itemView.getContext(), RecipeActivity.class);
+                // Pass the title text to the new activity
+                intent.putExtra("recipeTitle", currentItem.get("title"));
+                // Start the new activity
+                holder.itemView.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -56,4 +70,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
             recipeImage = itemView.findViewById(R.id.category_img);
         }
     }
+
+
 }

@@ -145,7 +145,19 @@ public class HomeActivity extends AppCompatActivity {
         ArrayList<HashMap<String, String>> dataTable = dataStorage.getDataTable();
 
         // Set the adapter
-        recipeAdapter = new RecipeAdapter(this, dataTable);
+        recipeAdapter = new RecipeAdapter(this, dataTable, new RecipeAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(String title) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, RecipeActivity.class);
+
+                // Pass the title text as an extra
+                intent.putExtra("recipeTitle", title);
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
         recyclerView.setAdapter(recipeAdapter);
     }
 }

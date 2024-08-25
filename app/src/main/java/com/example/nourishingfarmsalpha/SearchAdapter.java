@@ -1,6 +1,7 @@
 package com.example.nourishingfarmsalpha;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,13 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
         Glide.with(context)
                 .load(data.get("image"))
                 .into(holder.imageView);
+
+        // Set an onClickListener to open a new activity and pass the title text
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, RecipeActivity.class);
+            intent.putExtra("recipeTitle", data.get("title"));
+            context.startActivity(intent);
+        });
     }
 
     @Override

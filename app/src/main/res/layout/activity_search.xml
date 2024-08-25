@@ -38,7 +38,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/searchInput"
         app:layout_constraintTop_toTopOf="@+id/searchInput"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="#444444" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_search"
