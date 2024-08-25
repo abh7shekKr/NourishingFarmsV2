@@ -94,6 +94,7 @@
             android:text="Ingredients" />
 
         <ScrollView
+            android:id="@+id/ing_scroll_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_ing"
@@ -106,6 +107,8 @@
                 android:lineSpacingExtra="10dp"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="10dp"
                 android:text=""
                 android:textSize="15sp"
                 android:fontFamily="@font/poppins"
@@ -125,12 +128,13 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="42dp"
             android:fontFamily="@font/poppins"
-            android:textColor="@color/white"
-            android:background="@drawable/btn_ing"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
             android:paddingHorizontal="20dp"
             android:text="Steps" />
 
         <ScrollView
+            android:id="@+id/steps_scroll_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_steps"
@@ -145,19 +149,21 @@
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="@font/poppins"
                 android:lineSpacingExtra="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="10dp"
                 android:text=""
                 android:textColor="@color/black"
                 android:textSize="15sp" />
         </ScrollView>
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/item_img"
-        app:srcCompat="@drawable/scroll_up"
-        />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView9"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/item_img"-->
+<!--        app:srcCompat="@drawable/scroll_up"-->
+<!--        />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

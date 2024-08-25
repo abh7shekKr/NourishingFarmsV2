@@ -312,72 +312,72 @@
 
 
     <!-- Navbar -->
-    <RelativeLayout
-        android:id="@+id/navbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.5">
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/navbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5">-->
 
-        <!-- Top Border -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height=".5dp"
-            android:background="#555555" />
+<!--        &lt;!&ndash; Top Border &ndash;&gt;-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height=".5dp"-->
+<!--            android:background="#555555" />-->
 
-        <!-- Navbar Icons -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:paddingTop="12dp"
-            android:weightSum="5"> <!-- Adjust weightSum according to the number of icons -->
+<!--        &lt;!&ndash; Navbar Icons &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center"-->
+<!--            android:paddingTop="12dp"-->
+<!--            android:weightSum="5"> &lt;!&ndash; Adjust weightSum according to the number of icons &ndash;&gt;-->
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:contentDescription="gallery icon"
-                android:src="@drawable/icongallery2"
-                app:tint="#444444" />
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="gallery icon"-->
+<!--                android:src="@drawable/icongallery2"-->
+<!--                app:tint="#444444" />-->
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:contentDescription="sop icon"
-                android:src="@drawable/iconchef"
-                app:tint="#444444"/>
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="sop icon"-->
+<!--                android:src="@drawable/iconchef"-->
+<!--                app:tint="#444444"/>-->
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:contentDescription="home icon"
-                android:src="@drawable/iconhome"
-                app:tint="@color/primary_color2"/>
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="home icon"-->
+<!--                android:src="@drawable/iconhome"-->
+<!--                app:tint="@color/primary_color2"/>-->
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:contentDescription="recipe icon"
-                android:src="@drawable/iconrecipe5"
-                app:tint="#444444"/>
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="recipe icon"-->
+<!--                android:src="@drawable/iconrecipe5"-->
+<!--                app:tint="#444444"/>-->
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:contentDescription="user icon"
-                android:src="@drawable/iconuser2"
-                app:tint="#444444"/>
-        </LinearLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:contentDescription="user icon"-->
+<!--                android:src="@drawable/iconuser2"-->
+<!--                app:tint="#444444"/>-->
+<!--        </LinearLayout>-->
 
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
