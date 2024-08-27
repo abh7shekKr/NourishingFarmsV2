@@ -94,9 +94,16 @@ public class RecipeActivity extends AppCompatActivity {
             }
         }
 
-        // Set the ingredients in the corresponding TextView
+        // Convert the ingredients string into a formatted string with bullet points
+        String[] ingredientsArray = ingredients.split(",");
+        StringBuilder formattedIngredients = new StringBuilder();
+        for (String ingredient : ingredientsArray) {
+            formattedIngredients.append("• ").append(ingredient.trim()).append("\n");
+        }
+
+        // Set the formatted ingredients in the corresponding TextView
         TextView ingredientsTextView = findViewById(R.id.ing_data);
-        ingredientsTextView.setText(ingredients);
+        ingredientsTextView.setText(formattedIngredients.toString());
 
         // Set the steps in the corresponding TextView
         TextView stepsTextView = findViewById(R.id.steps_data);
