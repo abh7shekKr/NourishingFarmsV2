@@ -145,8 +145,8 @@ public class RecipeActivity extends AppCompatActivity {
 
     // Method to populate the ingredients table with ingredient data
     private void populateIngredientsTable(TableLayout ingredientsTable, String ingredients) {
-        // Regular expression pattern to match ingredients and their quantities
-        Pattern pattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+g), (\\d+g), (\\d+g)\\)");
+        // Updated regular expression pattern to match ingredients and their quantities
+        Pattern pattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g)\\)");
         Matcher matcher = pattern.matcher(ingredients);
 
         // Iterate over the matched patterns and extract data
@@ -167,17 +167,17 @@ public class RecipeActivity extends AppCompatActivity {
             ingredientNameView.setTextColor(Color.BLACK); // Set text color to black
 
             TextView quantity1View = new TextView(this);
-            quantity1View.setText("   "+quantity1);
+            quantity1View.setText("   " + quantity1);
             quantity1View.setPadding(8, 8, 8, 8);
             quantity1View.setTextColor(Color.BLACK); // Set text color to black
 
             TextView quantity2View = new TextView(this);
-            quantity2View.setText("   "+quantity2);
+            quantity2View.setText("   " + quantity2);
             quantity2View.setPadding(8, 8, 8, 8);
             quantity2View.setTextColor(Color.BLACK); // Set text color to black
 
             TextView quantity3View = new TextView(this);
-            quantity3View.setText("   "+quantity3);
+            quantity3View.setText("   " + quantity3);
             quantity3View.setPadding(8, 8, 8, 8);
             quantity3View.setTextColor(Color.BLACK); // Set text color to black
 
