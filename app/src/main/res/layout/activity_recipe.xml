@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pizza_sample" />
+        app:srcCompat="@drawable/pizza_sample"
+        android:src="@drawable/testimg"/>
 
     <ImageView
         android:id="@+id/shadow"
@@ -55,177 +56,170 @@
         app:srcCompat="@drawable/full_size_ic"
         app:tint="@color/white" />
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
+    <!-- Make the entire RelativeLayout scrollable by wrapping it in a ScrollView -->
+    <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="-12dp"
-        android:background="@drawable/card_recipe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/item_img">
+        app:layout_constraintTop_toBottomOf="@+id/item_img"
+        android:background="@drawable/card_recipe"
+        android:layout_marginTop="-12dp"
+        >
 
-        <TextView
-            android:id="@+id/title_recipe_page"
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="45dp"
-            android:fontFamily="@font/poppins"
-            android:text="I am sample text"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/btn_ing"
-            android:layout_width="150dp"
-            android:layout_height="42dp"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/title_recipe_page"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="42dp"
-            android:fontFamily="@font/poppins"
-            android:textColor="@color/white"
-            android:background="@drawable/btn_ing"
-            android:paddingHorizontal="20dp"
-            android:text="Ingredients" />
-
-        <ScrollView
-            android:id="@+id/ing_scroll_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn_ing"
-            android:layout_alignParentStart="true"
-            android:padding="10dp">
-
-            <TableLayout
-                android:id="@+id/ingredients_table"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:stretchColumns="1,2,3"
-                android:layout_marginTop="16dp"
-                android:padding="8dp"
-                android:background="#f2f2f2"
-                android:divider="@android:color/darker_gray"
-                android:showDividers="middle">
-
-                <!-- Header Row -->
-                <TableRow>
-
-                    <TextView
-                        android:layout_width="230dp"
-                        android:layout_height="wrap_content"
-                        android:background="#ddd"
-                        android:padding="8dp"
-                        android:text="Ingredient"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/w150g"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:background="#ddd"
-                        android:padding="8dp"
-                        android:text="150g"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/w250g"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:background="#ddd"
-                        android:padding="8dp"
-                        android:text="250g"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/w350g"
-                        android:text="350g"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:padding="8dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:background="#ddd" />
-                </TableRow>
-            </TableLayout>
-
-        </ScrollView>
-
-        <TextView
-            android:id="@+id/ingredients_end_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ing_scroll_view"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentStart="true"
-            android:paddingStart="10dp"
-            android:text="Protein Add Ons(Any one) : Paneer/Chicken/Tofu/Soya (80gms)"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-
-            android:textStyle="italic|bold" />
-
-
-
-
-        <Button
-            android:id="@+id/btn_steps"
-            android:layout_width="150dp"
-            android:layout_height="42dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/title_recipe_page"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="42dp"
-            android:fontFamily="@font/poppins"
-            android:textColor="@color/black"
-            android:background="@android:color/transparent"
-            android:paddingHorizontal="20dp"
-            android:text="Steps" />
-
-        <ScrollView
-            android:id="@+id/steps_scroll_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn_steps"
-            android:layout_alignParentStart="true"
-            android:padding="10dp"
-            android:visibility="gone">
+            android:layout_marginTop="-12dp"
+            android:background="@drawable/card_recipe"
+            >
 
             <TextView
-                android:id="@+id/steps_data"
+                android:id="@+id/title_recipe_page"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="45dp"
                 android:fontFamily="@font/poppins"
-                android:lineSpacingExtra="10dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginStart="10dp"
-                android:text=""
+                android:text="I am sample text"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textStyle="bold"
+                android:textSize="20sp" />
 
-        </ScrollView>
+            <Button
+                android:id="@+id/btn_ing"
+                android:layout_width="150dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/title_recipe_page"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="42dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_ing"
+                android:paddingHorizontal="20dp"
+                android:text="Ingredients" />
 
+            <ScrollView
+                android:id="@+id/ing_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_ing"
+                android:layout_alignParentStart="true"
+                android:padding="10dp">
 
+                <TableLayout
+                    android:id="@+id/ingredients_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1,2,3"
+                    android:layout_marginTop="16dp"
+                    android:padding="8dp"
+                    android:background="#f2f2f2"
+                    android:divider="@android:color/darker_gray"
+                    android:showDividers="middle">
 
-    </RelativeLayout>
+                    <!-- Header Row -->
+                    <TableRow>
 
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ddd"
+                            android:padding="8dp"
+                            android:text="Ingredient"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
 
+                        <TextView
+                            android:id="@+id/w150g"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ddd"
+                            android:padding="8dp"
+                            android:text="150g"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView9"-->
-<!--        android:layout_width="50dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginEnd="16dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/item_img"-->
-<!--        app:srcCompat="@drawable/scroll_up"-->
-<!--        />-->
+                        <TextView
+                            android:id="@+id/w250g"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ddd"
+                            android:padding="8dp"
+                            android:text="250g"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/w350g"
+                            android:text="350g"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:background="#ddd" />
+                    </TableRow>
+                </TableLayout>
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/ingredients_end_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ing_scroll_view"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:paddingStart="10dp"
+                android:text="Protein Add Ons(Any one) : Paneer/Chicken/Tofu/Soya (80gms)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/btn_steps"
+                android:layout_width="150dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/title_recipe_page"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="42dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="20dp"
+                android:text="Steps" />
+
+            <ScrollView
+                android:id="@+id/steps_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_steps"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/steps_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/poppins"
+                    android:lineSpacingExtra="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

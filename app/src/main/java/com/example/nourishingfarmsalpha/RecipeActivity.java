@@ -108,9 +108,9 @@ public class RecipeActivity extends AppCompatActivity {
         stepsTextView.setText(steps);
 
         // Load the image with Glide
-        Glide.with(this)
-                .load(imageUrl)
-                .into(imageView);
+//        Glide.with(this)
+//                .load(imageUrl)
+//                .into(imageView);
 
         // Handle ImageView scaling
         fullSizeButton.setOnClickListener(new View.OnClickListener() {
@@ -126,9 +126,9 @@ public class RecipeActivity extends AppCompatActivity {
                 isFitCenter = !isFitCenter;
 
                 // Reload the image with Glide to reflect the scale type change
-                Glide.with(RecipeActivity.this)
-                        .load(imageUrl)
-                        .into(imageView);
+//                Glide.with(RecipeActivity.this)
+//                        .load(imageUrl)
+//                        .into(imageView);
             }
         });
 
