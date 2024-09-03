@@ -67,6 +67,7 @@ public class RecipeActivity extends AppCompatActivity {
                 stepsButton.setTextColor(Color.BLACK);
                 ingredientsButton.setBackgroundResource(R.drawable.btn_ing);
                 ingredientsButton.setTextColor(Color.WHITE);
+                findViewById(R.id.ingredients_end_text).setVisibility(View.VISIBLE);
             }
         });
 
@@ -80,6 +81,7 @@ public class RecipeActivity extends AppCompatActivity {
                 ingredientsButton.setTextColor(Color.BLACK);
                 stepsButton.setBackgroundResource(R.drawable.btn_ing);
                 stepsButton.setTextColor(Color.WHITE);
+                findViewById(R.id.ingredients_end_text).setVisibility(View.GONE);
             }
         });
 
