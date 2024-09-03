@@ -17,8 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pizza_sample"
-        android:src="@drawable/testimg"/>
+        app:srcCompat="@drawable/pizza_sample"/>
 
     <ImageView
         android:id="@+id/shadow"

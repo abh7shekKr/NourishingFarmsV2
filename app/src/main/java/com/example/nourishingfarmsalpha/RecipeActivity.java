@@ -29,6 +29,9 @@ public class RecipeActivity extends AppCompatActivity {
     private ImageView fullSizeButton;
     private String imageUrl;
 
+    private String ingImg = "";
+    private boolean isUsingDrawableImage = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,6 +102,7 @@ public class RecipeActivity extends AppCompatActivity {
                 ingredients = item.get("ingredients");
                 steps = item.get("steps");
                 imageUrl = item.get("image");
+                ingImg = item.get("ingImg");
                 break;
             }
         }
@@ -108,27 +112,39 @@ public class RecipeActivity extends AppCompatActivity {
         stepsTextView.setText(steps);
 
         // Load the image with Glide
-//        Glide.with(this)
-//                .load(imageUrl)
-//                .into(imageView);
+        Glide.with(this)
+                .load(imageUrl)
+                .into(imageView);
 
         // Handle ImageView scaling
         fullSizeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (isFitCenter) {
-                    imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                    fullSizeButton.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP);
+                if (isUsingDrawableImage) {
+                    // Switch back to the URL image using Glide
+                    Glide.with(RecipeActivity.this)
+                            .load(imageUrl)
+                            .into(imageView);
                 } else {
-                    imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                    fullSizeButton.setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_ATOP);
-                }
-                isFitCenter = !isFitCenter;
+                    // Attempt to display the drawable image
+                    int drawableResourceId = getResources().getIdentifier(ingImg, "drawable", getPackageName());
 
-                // Reload the image with Glide to reflect the scale type change
-//                Glide.with(RecipeActivity.this)
-//                        .load(imageUrl)
-//                        .into(imageView);
+                    // Check if the drawable resource exists
+                    if (drawableResourceId != 0) {
+                        imageView.setImageResource(drawableResourceId);
+                    } else {
+                        // Fallback in case drawable not found (optional)
+                        imageView.setImageResource(R.drawable.bread); // Replace with a default image if needed
+                    }
+                }
+
+                // Toggle between FIT_CENTER and CENTER_CROP
+                imageView.setScaleType(isFitCenter ? ImageView.ScaleType.FIT_CENTER : ImageView.ScaleType.CENTER_CROP);
+                fullSizeButton.setColorFilter(isFitCenter ? Color.BLACK : Color.WHITE, PorterDuff.Mode.SRC_ATOP);
+
+                // Toggle the states
+                isUsingDrawableImage = !isUsingDrawableImage;
+                isFitCenter = !isFitCenter;
             }
         });
 
@@ -166,22 +182,22 @@ public class RecipeActivity extends AppCompatActivity {
             TextView ingredientNameView = new TextView(this);
             ingredientNameView.setText(ingredientName);
             ingredientNameView.setPadding(8, 8, 8, 8);
-            ingredientNameView.setTextColor(Color.BLACK); // Set text color to black
+            ingredientNameView.setTextColor(Color.BLACK);
 
             TextView quantity1View = new TextView(this);
             quantity1View.setText("   " + quantity1);
             quantity1View.setPadding(8, 8, 8, 8);
-            quantity1View.setTextColor(Color.BLACK); // Set text color to black
+            quantity1View.setTextColor(Color.BLACK);
 
             TextView quantity2View = new TextView(this);
             quantity2View.setText("   " + quantity2);
             quantity2View.setPadding(8, 8, 8, 8);
-            quantity2View.setTextColor(Color.BLACK); // Set text color to black
+            quantity2View.setTextColor(Color.BLACK);
 
             TextView quantity3View = new TextView(this);
             quantity3View.setText("   " + quantity3);
             quantity3View.setPadding(8, 8, 8, 8);
-            quantity3View.setTextColor(Color.BLACK); // Set text color to black
+            quantity3View.setTextColor(Color.BLACK);
 
             // Add the TextViews to the row
             tableRow.addView(ingredientNameView);
@@ -193,5 +209,4 @@ public class RecipeActivity extends AppCompatActivity {
             ingredientsTable.addView(tableRow);
         }
     }
-
 }

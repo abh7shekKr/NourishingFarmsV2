@@ -32,6 +32,7 @@ public class DataStorage {
                         "DressingChapata (30g, 40g, 60g)");
         row1.put("category", "salad");
         row1.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Indian%20spiced%20salad.png?raw=true");
+        row1.put("ingImg", "indianspiced");
         dataTable.add(row1);
 
 
@@ -58,6 +59,7 @@ public class DataStorage {
 
         row2.put("category", "salad");
         row2.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/crunchy%20thai%20salad.png?raw=true");
+        row2.put("ingImg", "crunchythai");
         dataTable.add(row2);
 
 
@@ -84,6 +86,7 @@ public class DataStorage {
 
         row3.put("category", "salad");
         row3.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/wild%20rice%20and%20celery%20salad.jpg?raw=true");
+        row3.put("ingImg", "wildricecelery");
         dataTable.add(row3);
 
 
@@ -109,6 +112,7 @@ public class DataStorage {
 
         row4.put("category", "salad");
         row4.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/super%20quinoa%20salad.jpg?raw=true");
+        row4.put("ingImg", "superquinoa");
         dataTable.add(row4);
 
 
@@ -137,6 +141,7 @@ public class DataStorage {
 
         row5.put("category", "salad");
         row5.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/classic%20italian%20salad.png?raw=true");
+        row5.put("ingImg", "classicitalian");
         dataTable.add(row5);
 
 
@@ -163,6 +168,7 @@ public class DataStorage {
 
         row6.put("category", "salad");
         row6.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pasta%20salad.png?raw=true");
+        row6.put("ingImg", "pastasalad");
         dataTable.add(row6);
 
 
@@ -189,6 +195,7 @@ public class DataStorage {
 
         row7.put("category", "salad");
         row7.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/southwest%20salad.jpg?raw=true");
+        row7.put("ingImg", "southwestsalad");
         dataTable.add(row7);
 
 
@@ -215,6 +222,7 @@ public class DataStorage {
 
         row8.put("category", "salad");
         row8.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/mediterrnean%20salad.png?raw=true");
+        row8.put("ingImg", "mediterraneancouscous");
         dataTable.add(row8);
 
 
@@ -241,6 +249,7 @@ public class DataStorage {
 
         row9.put("category", "salad");
         row9.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/greek%20salad.png?raw=true");
+        row9.put("ingImg", "greek");
         dataTable.add(row9);
 
 
@@ -269,6 +278,7 @@ public class DataStorage {
 
         row10.put("category", "salad");
         row10.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row10.put("ingImg", "lentiltaco");
         dataTable.add(row10);
 
 
@@ -294,6 +304,7 @@ public class DataStorage {
 
         row11.put("category", "salad");
         row11.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row11.put("ingImg", "umamikorean");
         dataTable.add(row11);
 
 
@@ -320,6 +331,7 @@ public class DataStorage {
 
         row12.put("category", "salad");
         row12.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row12.put("ingImg", "heartyfruit");
         dataTable.add(row12);
 
 
@@ -345,6 +357,7 @@ public class DataStorage {
 
         row13.put("category", "salad");
         row13.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row13.put("ingImg", "rainbowsalad");
         dataTable.add(row13);
 
 
@@ -370,6 +383,7 @@ public class DataStorage {
 
         row14.put("category", "salad");
         row14.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row14.put("ingImg", "raostedvegetable");
         dataTable.add(row14);
 
 
@@ -392,6 +406,7 @@ public class DataStorage {
 
         row15.put("category", "salad");
         row15.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row15.put("ingImg", "beetrootandcarrot");
         dataTable.add(row15);
 
 
@@ -418,9 +433,8 @@ public class DataStorage {
 
         row16.put("category", "salad");
         row16.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row16.put("ingImg", "arabianfattoush");
         dataTable.add(row16);
-
-
     }
     public ArrayList<HashMap<String, String>> getDataTable() {
         return dataTable;

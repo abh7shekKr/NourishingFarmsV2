@@ -44,7 +44,6 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
         HashMap<String, String> currentItem = dataTable.get(position);
 
         String title = currentItem.get("title");
-        String time = currentItem.get("time");
         String imageUrl = currentItem.get("image");
 
         holder.popularTxt.setText(title);
