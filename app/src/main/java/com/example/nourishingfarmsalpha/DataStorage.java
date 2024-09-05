@@ -20,7 +20,7 @@ public class DataStorage {
                         "Yellow Zucchini (12g, 15g, 20g),"+
                         "Red Pepper (7.5g, 15g, 20g),"+
                         "Yellow Pepper (7.5g, 15g, 20g),"+
-                        "Spicy Checkpeas (12g, 15g, 35g), " +
+                        "Spicy Checkpeas (12g, 25g, 35g), " +
                         "Beetroot (7.5g, 15g, 25g), " +
                         "Pomegranate (7.5g, 15g, 20g), " +
                         "Spicy Walnut (7.5g, 10g, 15g)" +
@@ -85,8 +85,8 @@ public class DataStorage {
                         "Black Rice (30g, 40g, 55g),"+
                         "Celery (5.25g, 10g, 15g),"+
                         "Cranberry (5.25g, 7g, 10g),"+
-                        "Walnut (5.35g, 7g, 10g)"+
-                        "Sunflower Seeds (5.35g, 7g, 10g)"+
+                        "Walnut (5.25g, 7g, 10g)"+
+                        "Sunflower Seeds (5.25g, 7g, 10g)"+
                         "Spring Onion (5.25g, 7g, 10g)"+
                         "Coriander (3.75g, 5g, 8g)"+
                         "Microgreens (3g, 8g, 12g)"+
@@ -339,7 +339,7 @@ public class DataStorage {
                         "Raddish Pickling (15g, 20g, 35g)"+
                         "Sesame Seeds (1.5g, 2g, 5g)"+
                         "Microgreens (3g, 10g, 12g)"+
-                        "Sweet And Spicy Sesame Seeds (30g, 40g, 60g)"
+                        "SweetSpicySesameSeeds (30g, 40g, 60g)"
         );
 
         row11.put("category", "salad");
