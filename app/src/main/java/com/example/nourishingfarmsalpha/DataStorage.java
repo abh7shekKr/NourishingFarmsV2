@@ -313,7 +313,7 @@ public class DataStorage {
         );
 
         row10.put("category", "salad");
-        row10.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row10.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/lentil%20taco%20salad.png?raw=true");
         row10.put("ingImg", "lentiltaco");
         row10.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
                 "•Spread Lettuce in bottom. \n" +
@@ -343,7 +343,7 @@ public class DataStorage {
         );
 
         row11.put("category", "salad");
-        row11.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row11.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/umami%20korean%20salad.jpg?raw=true");
         row11.put("ingImg", "umamikorean");
         row11.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
                 "•Spread Lettuce in bottom. \n" +
@@ -374,7 +374,7 @@ public class DataStorage {
         );
 
         row12.put("category", "salad");
-        row12.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row12.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/hearty%20fruit%20salad.png?raw=true");
         row12.put("ingImg", "heartyfruit");
         row12.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
                 "•Spread Lettuce in bottom. \n" +
@@ -404,7 +404,7 @@ public class DataStorage {
         );
 
         row13.put("category", "salad");
-        row13.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row13.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/rainbow%20salad.png?raw=true");
         row13.put("ingImg", "rainbowsalad");
         row13.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
                 "•Spread Lettuce in bottom. \n" +
@@ -434,7 +434,7 @@ public class DataStorage {
         );
 
         row14.put("category", "salad");
-        row14.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row14.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/roasted%20vegge%20salad.jpg?raw=true");
         row14.put("ingImg", "raostedvegetable");
         row14.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
                 "•Spread Lettuce in bottom. \n" +
@@ -461,7 +461,7 @@ public class DataStorage {
         );
 
         row15.put("category", "salad");
-        row15.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row15.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/beetroot%20and%20carrot%20salad.png?raw=true");
         row15.put("ingImg", "beetrootandcarrot");
         row15.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
                 "•Spread Lettuce in bottom. \n" +
@@ -492,7 +492,7 @@ public class DataStorage {
         );
 
         row16.put("category", "salad");
-        row16.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
+        row16.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/arabian%20fatoush%20salad.png?raw=true");
         row16.put("ingImg", "arabianfattoush");
         row16.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
                 "•Spread Lettuce in bottom. \n" +
