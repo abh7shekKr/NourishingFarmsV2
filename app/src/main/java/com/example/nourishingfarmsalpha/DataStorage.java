@@ -33,6 +33,10 @@ public class DataStorage {
         row1.put("category", "salad");
         row1.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Indian%20spiced%20salad.png?raw=true");
         row1.put("ingImg", "indianspiced");
+        row1.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Chapata Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.\n");
         dataTable.add(row1);
 
 
@@ -60,6 +64,10 @@ public class DataStorage {
         row2.put("category", "salad");
         row2.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/crunchy%20thai%20salad.png?raw=true");
         row2.put("ingImg", "crunchythai");
+        row2.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Zesty Peanut Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café. \n");
         dataTable.add(row2);
 
 
@@ -87,6 +95,10 @@ public class DataStorage {
         row3.put("category", "salad");
         row3.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/wild%20rice%20and%20celery%20salad.jpg?raw=true");
         row3.put("ingImg", "wildricecelery");
+        row3.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Orange Vinaigrette Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.  \n");
         dataTable.add(row3);
 
 
@@ -113,6 +125,10 @@ public class DataStorage {
         row4.put("category", "salad");
         row4.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/super%20quinoa%20salad.jpg?raw=true");
         row4.put("ingImg", "superquinoa");
+        row4.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Roasted Garlic Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.\n");
         dataTable.add(row4);
 
 
@@ -142,6 +158,10 @@ public class DataStorage {
         row5.put("category", "salad");
         row5.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/classic%20italian%20salad.png?raw=true");
         row5.put("ingImg", "classicitalian");
+        row5.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Spicy Herb Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.  \n");
         dataTable.add(row5);
 
 
@@ -169,6 +189,10 @@ public class DataStorage {
         row6.put("category", "salad");
         row6.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pasta%20salad.png?raw=true");
         row6.put("ingImg", "pastasalad");
+        row6.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Light Caesar Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.  \n");
         dataTable.add(row6);
 
 
@@ -196,6 +220,10 @@ public class DataStorage {
         row7.put("category", "salad");
         row7.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/southwest%20salad.jpg?raw=true");
         row7.put("ingImg", "southwestsalad");
+        row7.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Creamy Chipotle Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café. \n");
         dataTable.add(row7);
 
 
@@ -223,6 +251,10 @@ public class DataStorage {
         row8.put("category", "salad");
         row8.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/mediterrnean%20salad.png?raw=true");
         row8.put("ingImg", "mediterraneancouscous");
+        row8.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Sunshine Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.  \n");
         dataTable.add(row8);
 
 
@@ -250,6 +282,10 @@ public class DataStorage {
         row9.put("category", "salad");
         row9.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/greek%20salad.png?raw=true");
         row9.put("ingImg", "greek");
+        row9.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Feta Mustard Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.  \n");
         dataTable.add(row9);
 
 
@@ -279,6 +315,10 @@ public class DataStorage {
         row10.put("category", "salad");
         row10.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
         row10.put("ingImg", "lentiltaco");
+        row10.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Creamy Cashew Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.  \n");
         dataTable.add(row10);
 
 
@@ -305,6 +345,10 @@ public class DataStorage {
         row11.put("category", "salad");
         row11.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
         row11.put("ingImg", "umamikorean");
+        row11.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Sweet and Spicy Sesame Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.\n");
         dataTable.add(row11);
 
 
@@ -332,6 +376,10 @@ public class DataStorage {
         row12.put("category", "salad");
         row12.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
         row12.put("ingImg", "heartyfruit");
+        row12.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Balsamic Vinaigrette Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.\n");
         dataTable.add(row12);
 
 
@@ -358,6 +406,10 @@ public class DataStorage {
         row13.put("category", "salad");
         row13.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
         row13.put("ingImg", "rainbowsalad");
+        row13.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep thousand Island Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.  \n");
         dataTable.add(row13);
 
 
@@ -384,6 +436,10 @@ public class DataStorage {
         row14.put("category", "salad");
         row14.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
         row14.put("ingImg", "raostedvegetable");
+        row14.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep ranch Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.  \n");
         dataTable.add(row14);
 
 
@@ -407,6 +463,10 @@ public class DataStorage {
         row15.put("category", "salad");
         row15.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
         row15.put("ingImg", "beetrootandcarrot");
+        row15.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep orange vinaigrette Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café.\n");
         dataTable.add(row15);
 
 
@@ -434,6 +494,10 @@ public class DataStorage {
         row16.put("category", "salad");
         row16.put("image", "https://peasandcrayons.com/wp-content/uploads/2017/02/healthy-tomato-avocado-cucumber-salad-recipe-peasandcrayons-4716.jpg");
         row16.put("ingImg", "arabianfattoush");
+        row16.put("steps", "•Keep Salad Bowl Takeaway or Melamine on the Weighing Machine. \n" +
+                "•Spread Lettuce in bottom. \n" +
+                "•Keep Hummus Dressing Container in the Middle. \n" +
+                "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café. \n");
         dataTable.add(row16);
     }
     public ArrayList<HashMap<String, String>> getDataTable() {
