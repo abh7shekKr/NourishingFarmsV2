@@ -575,14 +575,14 @@ public class DataStorage {
         row17.put("id", "17");
         row17.put("title", "Roasted Veg Wrap");
         row17.put("ingredients",
-                "Wrap (1 No.)," +
-                        "Harissa sauce (25g)," +
-                        "Lettuce (20g)," +
-                        "Onion sliced (20g)," +
-                        "Roasted Vegetables (60g)," +
-                        "Mix Herbs (2g)," +
-                        "Balsamic Glaze (2g)," +
-                        "Cheese Slice (10g)"
+                "Wrap (no,1 No.,No)," +
+                        "Harissa sauce (spread,25g,Gms)," +
+                        "Lettuce (20g,Gms)," +
+                        "Onion sliced (rings,20g,Gms)," +
+                        "Roasted Vegetables (60g,Gms)," +
+                        "Mix Herbs (2g,Gms)," +
+                        "Balsamic Glaze (2g,Gms)," +
+                        "Cheese Slice (10g,Gms)"
         );
         row17.put("category", "wraps");
         row17.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/roasted_veg_wrap.png?raw=true");
@@ -605,16 +605,16 @@ public class DataStorage {
         row18.put("id", "18");
         row18.put("title", "Pesto Paneer Wrap");
         row18.put("ingredients",
-                "Wrap (1 No.)," +
-                        "Pesto (20g)," +
-                        "Lettuce (15g)," +
-                        "Onion Slice (20g)," +
-                        "Tomato Slice (25g)," +
-                        "Pesto Paneer Slice (60g)," +
-                        "Herbs (2g)," +
-                        "Balsamic Glaze (2g)," +
-                        "Cheese Slice (10g)," +
-                        "Cucumber (15g)"
+                "Wrap (no,1 No.,No)," +
+                        "Pesto (20g,Gms)," +
+                        "Lettuce (15g,Gms)," +
+                        "Onion Slice (20g,Gms)," +
+                        "Tomato Slice (25g,Gms)," +
+                        "Pesto Paneer Slice (Cooked,60g,Gms)," +
+                        "Herbs (2g,Gms)," +
+                        "Balsamic Glaze (2g,Gms)," +
+                        "Cheese Slice (10g,Gms)," +
+                        "Cucumber (15g,Gms)"
         );
         row18.put("category", "wraps");
         row18.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pesto_paneer_wrap.png?raw=true");
@@ -637,16 +637,16 @@ public class DataStorage {
         row19.put("id", "19");
         row19.put("title", "Pesto Chicken Wrap");
         row19.put("ingredients",
-                "Wrap (1 No.)," +
-                        "Pesto Sauce (20g)," +
-                        "Lettuce (15g)," +
-                        "Onion Slice (20g)," +
-                        "Tomato Slice (30g)," +
-                        "Pesto Chicken Slice (60g)," +
-                        "Herbs (2g)," +
-                        "Glaze (2g)," +
-                        "Cheese Slice (10g)," +
-                        "Cucumber (15g)"
+                "Wrap (1 No.,No)," +
+                        "Pesto Sauce (20g,Gms)," +
+                        "Lettuce (15g,Gms)," +
+                        "Onion Slice (20g,Gms)," +
+                        "Tomato Slice (30g,Gms)," +
+                        "Pesto Chicken Slice (Cooked,60g,Gms)," +
+                        "Herbs (2g,Gms)," +
+                        "Glaze (2g,Gms)," +
+                        "Cheese Slice (10g,Gms)," +
+                        "Cucumber (Sliced,15g,Gms)"
         );
         row19.put("category", "wraps");
         row19.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pesto_chicken_wrap.png?raw=true");
@@ -669,16 +669,16 @@ public class DataStorage {
         row20.put("id", "20");
         row20.put("title", "Paneer Harissa Wrap");
         row20.put("ingredients",
-                "Wrap (1 No.)," +
-                        "Harissa Sauce (20g)," +
-                        "Lettuce (15g)," +
-                        "Onion Slice (20g)," +
-                        "Tomato Slice (30g)," +
-                        "Harissa Paneer Slice (60g)," +
-                        "Herbs (2g)," +
-                        "Glaze (2g)," +
-                        "Cheese Slice (10g)," +
-                        "Cucumber (15g)"
+                "Wrap (1 No.,No)," +
+                        "Harissa Sauce (20g,Gms)," +
+                        "Lettuce (15g,Gms)," +
+                        "Onion Slice (Rings,20g,Gms)," +
+                        "Tomato Slice (30g,Gms)," +
+                        "Harissa Paneer Slice (60g,Gms)," +
+                        "Herbs (2g,Gms)," +
+                        "Glaze (2g,Gms)," +
+                        "Cheese Slice (10g,Gms)," +
+                        "Cucumber (Sliced,15g,Gms)"
         );
         row20.put("category", "wraps");
         row20.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/paneer_harissa_wrap.png?raw=true");
@@ -701,16 +701,16 @@ public class DataStorage {
         row21.put("id", "21");
         row21.put("title", "Chicken Harissa Wrap");
         row21.put("ingredients",
-                "Wrap (1 No.)," +
-                        "Harissa Sauce (20g)," +
-                        "Lettuce (15g)," +
-                        "Onion Slice (20g)," +
-                        "Tomato Slice (30g)," +
-                        "Harissa Chicken Slice (60g)," +
-                        "Herbs (2g)," +
-                        "Glaze (2g)," +
-                        "Cheese Slice (10g)," +
-                        "Cucumber (15g)"
+                "Wrap (1 No.,No)," +
+                        "Harissa Sauce (20g,Gms)," +
+                        "Lettuce (15g,Gms)," +
+                        "Onion Slice (Rings,20g,Gms)," +
+                        "Tomato Slice (30g,Gms)," +
+                        "Harissa Chicken Slice (60g,Gms)," +
+                        "Herbs (2g,Gms)," +
+                        "Glaze (2g,Gms)," +
+                        "Cheese Slice (10g,Gms)," +
+                        "Cucumber (Sliced,15g,Gms)"
         );
         row21.put("category", "wraps");
         row21.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/chicken_harissa_wrap.png?raw=true");
@@ -733,13 +733,13 @@ public class DataStorage {
         row22.put("id", "22");
         row22.put("title", "Egg n cheese Wrap");
         row22.put("ingredients",
-                "Wrap (1 No.)," +
-                        "Harissa (20g)," +
-                        "Lettuce (15g)," +
-                        "Onion Slice (15g)," +
-                        "Egg (1 No.)," +
-                        "Sundried Tomato (10g)," +
-                        "Cheese Sliced (10g)"
+                "Wrap (No,1 No.,No)," +
+                        "Harissa (Spread,20g,Gms)," +
+                        "Lettuce (15g,Gms)," +
+                        "Onion Slice (Rings,15g,Gms)," +
+                        "Egg (Omlette,1 No.,Gms)," +
+                        "Sundried Tomato (10g,Gms)," +
+                        "Cheese Sliced (10g,Gms)"
         );
         row22.put("category", "wraps");
         row22.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/egg_n_cheese_sandwich.png?raw=true");
@@ -752,7 +752,7 @@ public class DataStorage {
                 "• Cut angular and serve with pepper and cucumber pickles.\n");
         dataTable.add(row22);
 
-        // Classic Bombay Sandwich
+        // Classic Bombay Wrap
         HashMap<String, String> row23 = new HashMap<>();
         row23.put("table_hd_1","Ingredients");
         row23.put("table_hd_2","Specification");
@@ -761,14 +761,14 @@ public class DataStorage {
         row23.put("id", "23");
         row23.put("title", "Classic Bombay Wrap");
         row23.put("ingredients",
-                "Bread (2 Slices)," +
-                        "Green Chatni (25g)," +
-                        "Lettuce (15g)," +
-                        "Onion Slice (20g)," +
-                        "Tomato Slice (30g)," +
-                        "Cucumber Slice (20g)," +
-                        "Potato Slice (20g)," +
-                        "Garam Masala, chaat Masala (2g)," +
+                "Bread (2 Slices,No)," +
+                        "Green Chatni (25g,Gms)," +
+                        "Lettuce (15g,Gms)," +
+                        "Onion Slice (20g,Gms)," +
+                        "Tomato Slice (30g,Gms)," +
+                        "Cucumber Slice (20g,Gms)," +
+                        "Potato Slice (Boiled,20g,Gms)," +
+                        "Garam Masala, chaat Masala (2g,Gms)," +
                         "Cheese Slice (10g)"
         );
         row23.put("category", "wraps");

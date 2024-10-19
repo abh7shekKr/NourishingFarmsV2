@@ -40,7 +40,8 @@ public class RecipeActivity extends AppCompatActivity {
 
         // Get the title text from the Intent
         String recipeTitle = getIntent().getStringExtra("recipeTitle");
-        String category = getIntent().getStringExtra("category");
+        String category = "";
+        category= getIntent().getStringExtra("category");
         String col1 = getIntent().getStringExtra("col1");
         String col2 = getIntent().getStringExtra("col2");
         String col3 = getIntent().getStringExtra("col3");
@@ -123,6 +124,7 @@ public class RecipeActivity extends AppCompatActivity {
         String ingredients = "";
         String steps = "";
 
+
         for (HashMap<String, String> item : dataTable) {
             if (item.get("title").equals(recipeTitle)) {
                 ingredients = item.get("ingredients");
@@ -184,55 +186,48 @@ public class RecipeActivity extends AppCompatActivity {
         });
 
         // Populate the ingredients table
-        populateIngredientsTable(ingredientsTable, ingredients);
+        populateIngredientsTable(ingredientsTable, ingredients,category);
     }
 
-    // Method to populate the ingredients table with ingredient data
-    private void populateIngredientsTable(TableLayout ingredientsTable, String ingredients) {
-        // Updated regular expression pattern to match ingredients and their quantities
-        Pattern pattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g)\\)");
-        Matcher matcher = pattern.matcher(ingredients);
 
-        // Iterate over the matched patterns and extract data
+    private void populateIngredientsTable(TableLayout ingredientsTable, String ingredients, String category) {
+        // Pattern for salads
+        Pattern saladPattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g)\\)");
+        // Pattern for wraps
+        Pattern wrapPattern = Pattern.compile("([a-zA-Z ]+) \\(([a-zA-Z,]+)?(?:,)?(\\d+(?:\\.\\d+)?g)(?:,)?(\\w+)?\\)");
+
+        Matcher matcher;
+        if (category.equals("salad")) {
+            matcher = saladPattern.matcher(ingredients);
+        } else {
+            matcher = wrapPattern.matcher(ingredients);
+        }
+
         while (matcher.find()) {
-            // Extract ingredient name and quantities
-            String ingredientName = matcher.group(1).trim();
-            String quantity1 = matcher.group(2);
-            String quantity2 = matcher.group(3);
-            String quantity3 = matcher.group(4);
-
-            // Create a new row in the table for each ingredient
             TableRow tableRow = new TableRow(this);
 
-            // Create TextViews for each cell in the row
-            TextView ingredientNameView = new TextView(this);
-            ingredientNameView.setText(ingredientName);
-            ingredientNameView.setPadding(8, 8, 8, 8);
-            ingredientNameView.setTextColor(Color.BLACK);
-
-            TextView quantity1View = new TextView(this);
-            quantity1View.setText("   " + quantity1);
-            quantity1View.setPadding(8, 8, 8, 8);
-            quantity1View.setTextColor(Color.BLACK);
-
-            TextView quantity2View = new TextView(this);
-            quantity2View.setText("   " + quantity2);
-            quantity2View.setPadding(8, 8, 8, 8);
-            quantity2View.setTextColor(Color.BLACK);
-
-            TextView quantity3View = new TextView(this);
-            quantity3View.setText("   " + quantity3);
-            quantity3View.setPadding(8, 8, 8, 8);
-            quantity3View.setTextColor(Color.BLACK);
-
-            // Add the TextViews to the row
+            TextView ingredientNameView = createTextView(matcher.group(1).trim());
             tableRow.addView(ingredientNameView);
-            tableRow.addView(quantity1View);
-            tableRow.addView(quantity2View);
-            tableRow.addView(quantity3View);
 
-            // Add the row to the table
+            if (category.equals("salad")) {
+                tableRow.addView(createTextView(matcher.group(2)));
+                tableRow.addView(createTextView(matcher.group(3)));
+                tableRow.addView(createTextView(matcher.group(4)));
+            } else {
+                tableRow.addView(createTextView(matcher.group(2) != null ? matcher.group(2) : ""));
+                tableRow.addView(createTextView(matcher.group(3)));
+                tableRow.addView(createTextView(matcher.group(4) != null ? matcher.group(4) : ""));
+            }
+
             ingredientsTable.addView(tableRow);
         }
+    }
+
+    private TextView createTextView(String text) {
+        TextView textView = new TextView(this);
+        textView.setText("   " + text);
+        textView.setPadding(8, 8, 8, 8);
+        textView.setTextColor(Color.BLACK);
+        return textView;
     }
 }
