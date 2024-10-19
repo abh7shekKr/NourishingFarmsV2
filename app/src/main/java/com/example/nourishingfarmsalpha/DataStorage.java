@@ -761,7 +761,7 @@ public class DataStorage {
         row23.put("id", "23");
         row23.put("title", "Classic Bombay Wrap");
         row23.put("ingredients",
-                "Bread (2 Slices,No)," +
+                "Wrap (No,1 No.,No)," +
                         "Green Chatni (25g,Gms)," +
                         "Lettuce (15g,Gms)," +
                         "Onion Slice (20g,Gms)," +
@@ -799,7 +799,7 @@ public class DataStorage {
                         "Balsamic Glaze (2g)," +
                         "Mozzarella Grated (20g)"
         );
-        row24.put("category", "wraps");
+        row24.put("category", "sandwiche");
         row24.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/capresse_sandwich.png?raw=true");
         row24.put("ingImg", "capressesandwich");
         row24.put("steps", "• Warm both bread slices on grill pan on both sides.\n" +
