@@ -49,6 +49,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
                 // Pass the title text to the new activity
                 intent.putExtra("recipeTitle", currentItem.get("title"));
                 intent.putExtra("category",currentItem.get("category"));
+                intent.putExtra("col1",currentItem.get("table_hd_1"));
+                System.out.println("DEBUGG =="+currentItem.get("table_hd_2"));
+                intent.putExtra("col2",currentItem.get("table_hd_2"));
+                intent.putExtra("col3",currentItem.get("table_hd_3"));
+                intent.putExtra("col4",currentItem.get("table_hd_4"));
                 // Start the new activity
                 holder.itemView.getContext().startActivity(intent);
             }

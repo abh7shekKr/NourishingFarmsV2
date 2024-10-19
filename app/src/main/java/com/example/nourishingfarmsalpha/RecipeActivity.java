@@ -41,7 +41,10 @@ public class RecipeActivity extends AppCompatActivity {
         // Get the title text from the Intent
         String recipeTitle = getIntent().getStringExtra("recipeTitle");
         String category = getIntent().getStringExtra("category");
-
+        String col1 = getIntent().getStringExtra("col1");
+        String col2 = getIntent().getStringExtra("col2");
+        String col3 = getIntent().getStringExtra("col3");
+        String col4= getIntent().getStringExtra("col4");
 
 
         // Set the title in the TextView
@@ -64,10 +67,25 @@ public class RecipeActivity extends AppCompatActivity {
         ingredientsScrollView.setVisibility(View.VISIBLE);
         stepsScrollView.setVisibility(View.GONE);
 
+
         if(Objects.equals(category, "salad"))
         {
             findViewById(R.id.ingredients_end_text).setVisibility(View.VISIBLE);
         }
+
+        TextView head_1=findViewById(R.id.col1);
+        head_1.setText(col1);
+
+        TextView head_2=findViewById(R.id.col2);
+        head_2.setText(col2);
+
+        TextView head_3=findViewById(R.id.col3);
+        head_3.setText(col3);
+
+        TextView head_4=findViewById(R.id.col4);
+        head_4.setText(col4);
+
+
         // Handle Ingredients Button Click
         ingredientsButton.setOnClickListener(new View.OnClickListener() {
             @Override
