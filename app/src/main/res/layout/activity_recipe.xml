@@ -178,7 +178,8 @@
                 android:text="Protein Add Ons(Any one) : Paneer/Chicken/Tofu/Soya (80gms)"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="italic|bold" />
+                android:textStyle="italic|bold"
+                android:visibility="invisible"/>
 
             <Button
                 android:id="@+id/btn_steps"

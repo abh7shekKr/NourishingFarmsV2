@@ -42,6 +42,7 @@ public class DataStorage {
 
         //      salad 2
         HashMap<String, String> row2 = new HashMap<>();
+
         row2.put("id", "2");
         row2.put("title", "Crunchy Thai Salad");
         row2.put("ingredients",
@@ -499,6 +500,220 @@ public class DataStorage {
                 "•Keep Hummus Dressing Container in the Middle. \n" +
                 "•One by one Arrange all the ingredients around the dressing. Garnish with Microgreens. Close the container with lead or serve in your café. \n");
         dataTable.add(row16);
+
+
+        // Roasted Veg Wrap
+        HashMap<String, String> row17 = new HashMap<>();
+        row17.put("id", "17");
+        row17.put("title", "Roasted Veg Wrap");
+        row17.put("ingredients",
+                "Wrap (1 No.)," +
+                        "Harissa sauce (25g)," +
+                        "Lettuce (20g)," +
+                        "Onion sliced (20g)," +
+                        "Roasted Vegetables (60g)," +
+                        "Mix Herbs (2g)," +
+                        "Balsamic Glaze (2g)," +
+                        "Cheese Slice (10g)"
+        );
+        row17.put("category", "wraps");
+        row17.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/roasted_veg_wrap.png?raw=true");
+        row17.put("ingImg", "roastedvegwrap");
+        row17.put("steps", "• Warm wrap on grill pan on both sides. Warm roast veg filling in microwavable bowl meanwhile.\n" +
+                "• Apply harissa on middle of wrap, then layer with lettuce, roasted vegetables, onion rings.\n" +
+                "• Sprinkle mix herbs, add cheese slice, drizzle balsamic glaze.\n" +
+                "• Adjust filling in the middle, fold left and right edges toward the middle.\n" +
+                "• Fold bottom edge over fillings, tuck inside the wrap.\n" +
+                "• Roll tightly toward top edge. Apply little sauce on edge to stick.\n" +
+                "• Cut angular and serve with pepper and cucumber pickles.\n");
+        dataTable.add(row17);
+
+        // Pesto Paneer Wrap
+        HashMap<String, String> row18 = new HashMap<>();
+        row18.put("id", "18");
+        row18.put("title", "Pesto Paneer Wrap");
+        row18.put("ingredients",
+                "Wrap (1 No.)," +
+                        "Pesto (20g)," +
+                        "Lettuce (15g)," +
+                        "Onion Slice (20g)," +
+                        "Tomato Slice (25g)," +
+                        "Pesto Paneer Slice (60g)," +
+                        "Herbs (2g)," +
+                        "Balsamic Glaze (2g)," +
+                        "Cheese Slice (10g)," +
+                        "Cucumber (15g)"
+        );
+        row18.put("category", "wraps");
+        row18.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pesto_paneer_wrap.png?raw=true");
+        row18.put("ingImg", "pestopaneerwrap");
+        row18.put("steps", "• Warm wrap on grill pan on both sides. Warm paneer pesto in microwavable bowl meanwhile.\n" +
+                "• Apply Pesto on middle of wrap, layer with lettuce, onion rings, tomato slices, cucumber.\n" +
+                "• Sprinkle mix herbs, add pesto paneer slice, cheese slice, drizzle balsamic glaze.\n" +
+                "• Adjust filling in the middle, fold left and right edges toward the middle.\n" +
+                "• Fold bottom edge over fillings, tuck inside the wrap.\n" +
+                "• Roll tightly toward top edge. Apply little sauce on edge to stick.\n" +
+                "• Cut angular and serve with pepper and cucumber pickles.\n");
+        dataTable.add(row18);
+
+        // Pesto Chicken Wrap
+        HashMap<String, String> row19 = new HashMap<>();
+        row19.put("id", "19");
+        row19.put("title", "Pesto Chicken Wrap");
+        row19.put("ingredients",
+                "Wrap (1 No.)," +
+                        "Pesto Sauce (20g)," +
+                        "Lettuce (15g)," +
+                        "Onion Slice (20g)," +
+                        "Tomato Slice (30g)," +
+                        "Pesto Chicken Slice (60g)," +
+                        "Herbs (2g)," +
+                        "Glaze (2g)," +
+                        "Cheese Slice (10g)," +
+                        "Cucumber (15g)"
+        );
+        row19.put("category", "wraps");
+        row19.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pesto_chicken_wrap.png?raw=true");
+        row19.put("ingImg", "pestochickenwrap");
+        row19.put("steps", "• Warm wrap on grill pan on both sides. Warm chicken pesto in microwavable bowl meanwhile.\n" +
+                "• Apply Pesto on middle of wrap, layer with lettuce, onion rings, tomato slices, cucumber.\n" +
+                "• Sprinkle mix herbs, add pesto chicken slice, cheese slice, drizzle balsamic glaze.\n" +
+                "• Adjust filling in the middle, fold left and right edges toward the middle.\n" +
+                "• Fold bottom edge over fillings, tuck inside the wrap.\n" +
+                "• Roll tightly toward top edge. Apply little sauce on edge to stick.\n" +
+                "• Cut angular and serve with pepper and cucumber pickles.\n");
+        dataTable.add(row19);
+
+        // Paneer Harissa Wrap
+        HashMap<String, String> row20 = new HashMap<>();
+        row20.put("id", "20");
+        row20.put("title", "Paneer Harissa Wrap");
+        row20.put("ingredients",
+                "Wrap (1 No.)," +
+                        "Harissa Sauce (20g)," +
+                        "Lettuce (15g)," +
+                        "Onion Slice (20g)," +
+                        "Tomato Slice (30g)," +
+                        "Harissa Paneer Slice (60g)," +
+                        "Herbs (2g)," +
+                        "Glaze (2g)," +
+                        "Cheese Slice (10g)," +
+                        "Cucumber (15g)"
+        );
+        row20.put("category", "wraps");
+        row20.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/paneer_harissa_wrap.png?raw=true");
+        row20.put("ingImg", "paneerharissawrap");
+        row20.put("steps", "• Warm wrap on grill pan on both sides. Warm harissa paneer slices in microwavable bowl meanwhile.\n" +
+                "• Apply Harissa on middle of wrap, layer with lettuce, onion rings, tomato slices, cucumber.\n" +
+                "• Sprinkle mix herbs, add harissa paneer slice, cheese slice, drizzle balsamic glaze.\n" +
+                "• Adjust filling in the middle, fold left and right edges toward the middle.\n" +
+                "• Fold bottom edge over fillings, tuck inside the wrap.\n" +
+                "• Roll tightly toward top edge. Apply little sauce on edge to stick.\n" +
+                "• Cut angular and serve with pepper and cucumber pickles.\n");
+        dataTable.add(row20);
+
+        // Chicken Harissa Wrap
+        HashMap<String, String> row21 = new HashMap<>();
+        row21.put("id", "21");
+        row21.put("title", "Chicken Harissa Wrap");
+        row21.put("ingredients",
+                "Wrap (1 No.)," +
+                        "Harissa Sauce (20g)," +
+                        "Lettuce (15g)," +
+                        "Onion Slice (20g)," +
+                        "Tomato Slice (30g)," +
+                        "Harissa Chicken Slice (60g)," +
+                        "Herbs (2g)," +
+                        "Glaze (2g)," +
+                        "Cheese Slice (10g)," +
+                        "Cucumber (15g)"
+        );
+        row21.put("category", "wraps");
+        row21.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/chicken_harissa_wrap.png?raw=true");
+        row21.put("ingImg", "chickenharissawrap");
+        row21.put("steps", "• Warm wrap on grill pan on both sides. Warm harissa chicken slices in microwavable bowl meanwhile.\n" +
+                "• Apply Harissa on middle of wrap, layer with lettuce, onion rings, tomato slices, cucumber.\n" +
+                "• Sprinkle mix herbs, add harissa chicken slice, cheese slice, drizzle balsamic glaze.\n" +
+                "• Adjust filling in the middle, fold left and right edges toward the middle.\n" +
+                "• Fold bottom edge over fillings, tuck inside the wrap.\n" +
+                "• Roll tightly toward top edge. Apply little sauce on edge to stick.\n" +
+                "• Cut angular and serve with pepper and cucumber pickles.\n");
+        dataTable.add(row21);
+
+        // Egg n cheese Sandwich
+        HashMap<String, String> row22 = new HashMap<>();
+        row22.put("id", "22");
+        row22.put("title", "Egg n cheese Sandwich");
+        row22.put("ingredients",
+                "Wrap (1 No.)," +
+                        "Harissa (20g)," +
+                        "Lettuce (15g)," +
+                        "Onion Slice (15g)," +
+                        "Egg (1 No.)," +
+                        "Sundried Tomato (10g)," +
+                        "Cheese Sliced (10g)"
+        );
+        row22.put("category", "sandwich");
+        row22.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/egg_n_cheese_sandwich.png?raw=true");
+        row22.put("ingImg", "eggncheesesandwich");
+        row22.put("steps", "• Warm wrap on grill pan on both sides. Beat one egg, add salt n pepper, make thin omelette.\n" +
+                "• Apply Harissa on middle of wrap, layer with lettuce, onion rings, omelette, sundried tomato and cheese slice.\n" +
+                "• Adjust filling in the middle, fold left and right edges toward the middle.\n" +
+                "• Fold bottom edge over fillings, tuck inside the wrap.\n" +
+                "• Roll tightly toward top edge. Apply little sauce on edge to stick.\n" +
+                "• Cut angular and serve with pepper and cucumber pickles.\n");
+        dataTable.add(row22);
+
+        // Classic Bombay Sandwich
+        HashMap<String, String> row23 = new HashMap<>();
+        row23.put("id", "23");
+        row23.put("title", "Classic Bombay Sandwich");
+        row23.put("ingredients",
+                "Bread (2 Slices)," +
+                        "Green Chatni (25g)," +
+                        "Lettuce (15g)," +
+                        "Onion Slice (20g)," +
+                        "Tomato Slice (30g)," +
+                        "Cucumber Slice (20g)," +
+                        "Potato Slice (20g)," +
+                        "Garam Masala, chaat Masala (2g)," +
+                        "Cheese Slice (10g)"
+        );
+        row23.put("category", "sandwich");
+        row23.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/classic_bombay_sandwich.png?raw=true");
+        row23.put("ingImg", "classicbombaysandwich");
+        row23.put("steps", "• Warm both bread slices on grill pan on both sides.\n" +
+                "• Apply Green chutney on bread, layer with lettuce, onion rings, tomato slices, cucumber slices, boiled potato slices.\n" +
+                "• Sprinkle garam masala and chaat masala.\n" +
+                "• Add cheese slice.\n" +
+                "• Cover the sandwich with another slice and cut into triangular halves.\n" +
+                "• Serve with pepper and cucumber pickles.\n");
+        dataTable.add(row23);
+
+        // Capresse sw
+        HashMap<String, String> row24 = new HashMap<>();
+        row24.put("id", "24");
+        row24.put("title", "Capresse Sandwich");
+        row24.put("ingredients",
+                "Bread (2 Slices)," +
+                        "Pesto (20g)," +
+                        "Arugula (20g)," +
+                        "Tomato Slice (40g)," +
+                        "Mixed Herbs (2g)," +
+                        "Balsamic Glaze (2g)," +
+                        "Mozzarella Grated (20g)"
+        );
+        row24.put("category", "sandwich");
+        row24.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/capresse_sandwich.png?raw=true");
+        row24.put("ingImg", "capressesandwich");
+        row24.put("steps", "• Warm both bread slices on grill pan on both sides.\n" +
+                "• Apply pesto on bread, layer with arugula, tomato slices.\n" +
+                "• Sprinkle mix herbs and drizzle balsamic glaze.\n" +
+                "• Spread grated mozzarella.\n" +
+                "• Cover the sandwich with another slice and cut into triangular halves.\n" +
+                "• Serve with pepper and cucumber pickles.\n");
+        dataTable.add(row24);
+
     }
     public ArrayList<HashMap<String, String>> getDataTable() {
         return dataTable;

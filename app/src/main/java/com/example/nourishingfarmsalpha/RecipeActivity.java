@@ -17,6 +17,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,6 +40,9 @@ public class RecipeActivity extends AppCompatActivity {
 
         // Get the title text from the Intent
         String recipeTitle = getIntent().getStringExtra("recipeTitle");
+        String category = getIntent().getStringExtra("category");
+
+
 
         // Set the title in the TextView
         TextView titleTextView = findViewById(R.id.title_recipe_page);
@@ -60,6 +64,10 @@ public class RecipeActivity extends AppCompatActivity {
         ingredientsScrollView.setVisibility(View.VISIBLE);
         stepsScrollView.setVisibility(View.GONE);
 
+        if(Objects.equals(category, "salad"))
+        {
+            findViewById(R.id.ingredients_end_text).setVisibility(View.VISIBLE);
+        }
         // Handle Ingredients Button Click
         ingredientsButton.setOnClickListener(new View.OnClickListener() {
             @Override
