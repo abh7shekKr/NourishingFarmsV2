@@ -125,37 +125,38 @@
                     <TableRow>
 
                         <TextView
+                            android:id="@+id/col1"
                             android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:background="#ddd"
                             android:padding="8dp"
-                            android:text="Ingredient"
+                            android:text="col1"
                             android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/w150g"
+                            android:id="@+id/col2"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:background="#ddd"
                             android:padding="8dp"
-                            android:text="150g"
+                            android:text="col2"
                             android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/w250g"
+                            android:id="@+id/col3"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:background="#ddd"
                             android:padding="8dp"
-                            android:text="250g"
+                            android:text="col3"
                             android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/w350g"
-                            android:text="350g"
+                            android:id="@+id/col4"
+                            android:text="col3"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
@@ -178,7 +179,8 @@
                 android:text="Protein Add Ons(Any one) : Paneer/Chicken/Tofu/Soya (80gms)"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="italic|bold" />
+                android:textStyle="italic|bold"
+                android:visibility="invisible"/>
 
             <Button
                 android:id="@+id/btn_steps"
