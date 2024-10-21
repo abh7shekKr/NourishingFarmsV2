@@ -1032,6 +1032,175 @@ public class DataStorage {
         row32.put("suggested_pairing", "Pomegranate juice");
         dataTable.add(row32);
 
+
+        // Juicess
+        // Green Goodness
+        HashMap<String, String> row33 = new HashMap<>();
+        row33.put("table_hd_1", "Ingredients");
+        row33.put("table_hd_2", "Single Serving");
+        row33.put("table_hd_3", "5 Serving");
+        row33.put("id", "33");
+        row33.put("title", "Green Goodness");
+        row33.put("ingredients",
+                "Celery (30.12 Gms, 150.60 Gms)," +
+                        "Kale (27.11 Gms, 135.55 Gms)," +
+                        "Lettuce (52.71 Gms, 263.55 Gms)," +
+                        "Spinach (27.10 Gms, 135.50 Gms)," +
+                        "Cucumber (110.00 Gms, 550.00 Gms)," +
+                        "Apple (135.54 Gms, 677.70 Gms)," +
+                        "Orange (90.36 Gms, 451.80 Gms)," +
+                        "Lemon (6.02 Gms, 30.10 Gms)," +
+                        "Ginger (6.52 Gms, 32.60 Gms)"
+        );
+        row33.put("category", "juice");
+        row33.put("image", "https://github.com/yourimagepath/green_goodness.png?raw=true");
+        row33.put("ingImg", "greengoodness");
+        row33.put("steps", "• Take all the ingredients, wash them properly, and cut them into small pieces.\n" +
+                "• Blend them in a cold press juicer.\n" +
+                "• Strain and serve.\n");
+        row33.put("important_ingredients", "Kale, Spinach, Cucumber");
+        row33.put("suggested_pairing", "Southwest Salad");
+        dataTable.add(row33);
+
+        // Beet Bliss
+        HashMap<String, String> row34 = new HashMap<>();
+        row34.put("table_hd_1", "Ingredients");
+        row34.put("table_hd_2", "Single Serving");
+        row34.put("table_hd_3", "5 Serving");
+        row34.put("id", "34");
+        row34.put("title", "Beet Bliss");
+        row34.put("ingredients",
+                "Beet (44.78 Gms, 223.90 Gms)," +
+                        "Carrot (198.51 Gms, 992.55 Gms)," +
+                        "Cucumber (111.94 Gms, 559.70 Gms)," +
+                        "Orange (119.40 Gms, 597.00 Gms)," +
+                        "Pomegranate (19.40 Gms, 97.00 Gms)," +
+                        "Lemon (5.97 Gms, 29.85 Gms)"
+        );
+        row34.put("category", "juice");
+        row34.put("image", "https://github.com/yourimagepath/beet_bliss.png?raw=true");
+        row34.put("ingImg", "beetbliss");
+        row34.put("steps", "• Take all the ingredients, wash them properly, and cut them into small pieces.\n" +
+                "• Blend them in a cold press juicer.\n" +
+                "• Strain and serve.\n");
+        row34.put("important_ingredients", "Beet, Carrot");
+        row34.put("suggested_pairing", "Pasta Salad");
+        dataTable.add(row34);
+
+        // Red Pepper Revitalizer
+        HashMap<String, String> row35 = new HashMap<>();
+        row35.put("table_hd_1", "Ingredients");
+        row35.put("table_hd_2", "Single Serving");
+        row35.put("table_hd_3", "5 Serving");
+        row35.put("id", "35");
+        row35.put("title", "Red Pepper Revitalizer");
+        row35.put("ingredients",
+                "Red Capsicum (29.76 Gms, 148.80 Gms)," +
+                        "Carrot (223.21 Gms, 1116.05 Gms)," +
+                        "Cucumber (111.61 Gms, 558.05 Gms)," +
+                        "Apple (126.49 Gms, 632.45 Gms)," +
+                        "Lemon (8.93 Gms, 44.65 Gms)"
+        );
+        row35.put("category", "juice");
+        row35.put("image", "https://github.com/yourimagepath/red_pepper_revitalizer.png?raw=true");
+        row35.put("ingImg", "redpepperrevitalizer");
+        row35.put("steps", "• Take all the ingredients, wash them properly, and cut them into small pieces.\n" +
+                "• Blend them in a cold press juicer.\n" +
+                "• Strain and serve.\n");
+        row35.put("important_ingredients", "Red Capsicum, Cucumber");
+        row35.put("suggested_pairing", "Greek Salad");
+        dataTable.add(row35);
+
+        // Cherry Tomato Sunrise
+        HashMap<String, String> row36 = new HashMap<>();
+        row36.put("table_hd_1", "Ingredients");
+        row36.put("table_hd_2", "Single Serving");
+        row36.put("table_hd_3", "5 Serving");
+        row36.put("id", "36");
+        row36.put("title", "Cherry Tomato Sunrise");
+        row36.put("ingredients",
+                "Cherry Tomato (60.24 Gms, 301.20 Gms)," +
+                        "Carrot (146.08 Gms, 730.40 Gms)," +
+                        "Cucumber (128.01 Gms, 640.05 Gms)," +
+                        "Apple (156.63 Gms, 783.15 Gms)," +
+                        "Lemon (9.04 Gms, 45.20 Gms)"
+        );
+        row36.put("category", "juice");
+        row36.put("image", "https://github.com/yourimagepath/cherry_tomato_sunrise.png?raw=true");
+        row36.put("ingImg", "cherrytomatosunrise");
+        row36.put("steps", "• Take all the ingredients, wash them properly, and cut them into small pieces.\n" +
+                "• Blend them in a cold press juicer.\n" +
+                "• Strain and serve.\n");
+        row36.put("important_ingredients", "Cherry Tomato, Apple");
+        row36.put("suggested_pairing", "Lentil Taco Salad");
+        dataTable.add(row36);
+
+        // Valencia Orange Juice
+        HashMap<String, String> row37 = new HashMap<>();
+        row37.put("table_hd_1", "Ingredients");
+        row37.put("table_hd_2", "Specification");
+        row37.put("table_hd_3", "Quantity");
+        row37.put("table_hd_4", "Unit");
+        row37.put("id", "37");
+        row37.put("title", "Valencia Orange Juice");
+        row37.put("ingredients",
+                "Orange (500.00 Gms)"
+        );
+        row37.put("category", "juice");
+        row37.put("image", "https://github.com/yourimagepath/valencia_orange_juice.png?raw=true");
+        row37.put("ingImg", "valenciaorangejuice");
+        row37.put("steps", "• Take the orange, peel and wash it.\n" +
+                "• Blend them in a cold press juicer.\n" +
+                "• Strain and serve.\n");
+        row37.put("important_ingredients", "Orange");
+        row37.put("suggested_pairing", "Paneer Harissa SW");
+        dataTable.add(row37);
+
+        // Tropical Paradise
+        HashMap<String, String> row38 = new HashMap<>();
+        row38.put("table_hd_1", "Ingredients");
+        row38.put("table_hd_2", "Specification");
+        row38.put("table_hd_3", "Quantity");
+        row38.put("table_hd_4", "Unit");
+        row38.put("id", "38");
+        row38.put("title", "Tropical Paradise");
+        row38.put("ingredients",
+                "Orange (160.00 Gms)," +
+                        "Pineapple (160.00 Gms)"
+        );
+        row38.put("category", "juice");
+        row38.put("image", "https://github.com/yourimagepath/tropical_paradise.png?raw=true");
+        row38.put("ingImg", "tropicalparadise");
+        row38.put("steps", "• Take orange and pineapple, peel and wash them.\n" +
+                "• Blend them in a cold press juicer.\n" +
+                "• Strain and serve.\n");
+        row38.put("important_ingredients", "Orange, Pineapple");
+        row38.put("suggested_pairing", "Bombay SW");
+        dataTable.add(row38);
+
+        // Watermelon Mint
+        HashMap<String, String> row39 = new HashMap<>();
+        row39.put("table_hd_1", "Ingredients");
+        row39.put("table_hd_2", "Single Serving");
+        row39.put("table_hd_3", "5 Serving");
+        row39.put("id", "39");
+        row39.put("title", "Watermelon Mint");
+        row39.put("ingredients",
+                "Watermelon (350.00 Gms, 1750.00 Gms)," +
+                        "Pomegranate (20.00 Gms, 100.00 Gms)," +
+                        "Mint (5.00 Gms, 25.00 Gms)"
+        );
+        row39.put("category", "juice");
+        row39.put("image", "https://github.com/yourimagepath/watermelon_mint.png?raw=true");
+        row39.put("ingImg", "watermelonmint");
+        row39.put("steps", "• Take the watermelon, peel, and cut it into small pieces.\n" +
+                "• Blend with mint and pomegranate in a juicer.\n" +
+                "• Strain and serve chilled.\n");
+        row39.put("important_ingredients", "Watermelon, Mint");
+        row39.put("suggested_pairing", "Couscous Salad");
+        dataTable.add(row39);
+
+
     }
     public ArrayList<HashMap<String, String>> getDataTable() {
         return dataTable;
