@@ -196,12 +196,24 @@ public class RecipeActivity extends AppCompatActivity {
         // Pattern for wraps
         Pattern wrapPattern = Pattern.compile("([a-zA-Z ]+) \\(([a-zA-Z,]+)?(?:,)?(\\d+(?:\\.\\d+)?g)(?:,)?(\\w+)?\\)");
 
+        Pattern sandwichPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*)?,?(\\d+(?:\\.\\d+)?),?([a-zA-Z]+)?\\)");
+
         Matcher matcher;
         if (category.equals("salad")) {
             matcher = saladPattern.matcher(ingredients);
-        } else {
+        }
+        else if(category.equals("wraps")) {
             matcher = wrapPattern.matcher(ingredients);
         }
+        else if(category.equals("sandwich")){
+            matcher = sandwichPattern.matcher(ingredients);
+        }
+        else
+        {
+            //default case
+            matcher = saladPattern.matcher(ingredients);
+        }
+
 
         while (matcher.find()) {
             TableRow tableRow = new TableRow(this);
@@ -213,7 +225,11 @@ public class RecipeActivity extends AppCompatActivity {
                 tableRow.addView(createTextView(matcher.group(2)));
                 tableRow.addView(createTextView(matcher.group(3)));
                 tableRow.addView(createTextView(matcher.group(4)));
-            } else {
+            } else if(category.equals("wraps")) {
+                tableRow.addView(createTextView(matcher.group(2) != null ? matcher.group(2) : ""));
+                tableRow.addView(createTextView(matcher.group(3)));
+                tableRow.addView(createTextView(matcher.group(4) != null ? matcher.group(4) : ""));
+            } else if (category.equals("sandwich")) {
                 tableRow.addView(createTextView(matcher.group(2) != null ? matcher.group(2) : ""));
                 tableRow.addView(createTextView(matcher.group(3)));
                 tableRow.addView(createTextView(matcher.group(4) != null ? matcher.group(4) : ""));
