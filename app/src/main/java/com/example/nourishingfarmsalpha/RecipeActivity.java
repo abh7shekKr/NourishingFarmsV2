@@ -197,9 +197,8 @@ public class RecipeActivity extends AppCompatActivity {
         Pattern sandwichPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*)?,?(\\d+(?:\\.\\d+)?),?([a-zA-Z]+)?\\)");
         Pattern juicePattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?\\s*[a-zA-Z]+), (\\d+(?:\\.\\d+)?\\s*[a-zA-Z]+)\\)");
         Pattern soupPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),([0-9.]+),([a-zA-Z]+)\\)");
-
-        // New pattern for "bowl" items
         Pattern bowlPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?),\\s*([a-zA-Z]+)\\)");
+        Pattern smoothiePattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?),\\s*([a-zA-Z]+)\\)");
 
         Matcher matcher;
         if (category.equals("salad")) {
@@ -214,6 +213,8 @@ public class RecipeActivity extends AppCompatActivity {
             matcher = soupPattern.matcher(ingredients);
         } else if (category.equals("bowl")) {
             matcher = bowlPattern.matcher(ingredients);
+        } else if (category.equals("smoothie")) {
+            matcher = smoothiePattern.matcher(ingredients);
         } else {
             matcher = saladPattern.matcher(ingredients); // Default to salad pattern if category not recognized
         }
@@ -221,6 +222,7 @@ public class RecipeActivity extends AppCompatActivity {
         while (matcher.find()) {
             TableRow tableRow = new TableRow(this);
 
+            // Create a TextView for ingredient name
             TextView ingredientNameView = createTextView(matcher.group(1).trim());
             tableRow.addView(ingredientNameView);
 
@@ -244,7 +246,7 @@ public class RecipeActivity extends AppCompatActivity {
                 tableRow.addView(createTextView(matcher.group(2).isEmpty() ? "-" : matcher.group(2))); // Specification
                 tableRow.addView(createTextView(matcher.group(3))); // Quantity
                 tableRow.addView(createTextView(matcher.group(4))); // Unit
-            } else if (category.equals("bowl")) {
+            } else if (category.equals("bowl") || category.equals("smoothie")) {
                 tableRow.addView(createTextView(matcher.group(2))); // Specification
                 tableRow.addView(createTextView(matcher.group(3))); // Quantity
                 tableRow.addView(createTextView(matcher.group(4))); // Unit
@@ -253,6 +255,7 @@ public class RecipeActivity extends AppCompatActivity {
             ingredientsTable.addView(tableRow);
         }
     }
+
 
 
     private TextView createTextView(String text) {

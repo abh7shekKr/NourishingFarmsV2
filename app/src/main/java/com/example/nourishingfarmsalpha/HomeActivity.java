@@ -126,6 +126,24 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
+        //Smoothies
+        ImageView smoothieImageView = findViewById(R.id.smoothie);
+
+        smoothieImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+
+                // Pass the ID of the ImageView as an extra (in this case, as a food category)
+                intent.putExtra("foodCategory", "smoothie");
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+
 
 
 
@@ -144,18 +162,85 @@ public class HomeActivity extends AppCompatActivity {
         DataStorage dataStorage = new DataStorage();
         ArrayList<HashMap<String, String>> dataTable = dataStorage.getDataTable();
 
-        // Set the adapter
+        // Set the adapter with modified click listener
         recipeAdapter = new RecipeAdapter(this, dataTable, new RecipeAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(String title) {
-                // Create an Intent to start the new activity
-                Intent intent = new Intent(HomeActivity.this, RecipeActivity.class);
+                if (title != null && !title.isEmpty()) {
+                    // Create an Intent to start the RecipeActivity
+                    Intent intent = new Intent(HomeActivity.this, RecipeActivity.class);
 
-                // Pass the title text as an extra
-                intent.putExtra("recipeTitle", title);
+                    // Find the recipe data from dataTable
+                    HashMap<String, String> recipeData = null;
+                    for (HashMap<String, String> recipe : dataTable) {
+                        if (title.equals(recipe.get("title"))) {
+                            recipeData = recipe;
+                            break;
+                        }
+                    }
 
-                // Start the new activity
-                startActivity(intent);
+                    if (recipeData != null) {
+                        // Set column headers based on category
+                        String category = recipeData.get("category");
+                        if (category != null) {
+                            switch (category.toLowerCase()) {
+                                case "salad":
+                                    intent.putExtra("col1", "Ingredients");
+                                    intent.putExtra("col2", "Weight(g)");
+                                    intent.putExtra("col3", "Protein(g)");
+                                    intent.putExtra("col4", "Calories(g)");
+                                    break;
+                                case "wraps":
+                                    intent.putExtra("col1", "Ingredients");
+                                    intent.putExtra("col2", "Type");
+                                    intent.putExtra("col3", "Weight");
+                                    intent.putExtra("col4", "Unit");
+                                    break;
+                                case "sandwich":
+                                    intent.putExtra("col1", "Ingredients");
+                                    intent.putExtra("col2", "Type");
+                                    intent.putExtra("col3", "Amount");
+                                    intent.putExtra("col4", "Unit");
+                                    break;
+                                case "juice":
+                                    intent.putExtra("col1", "Ingredients");
+                                    intent.putExtra("col2", "Single");
+                                    intent.putExtra("col3", "Five");
+                                    intent.putExtra("col4", "-");
+                                    break;
+                                case "soup":
+                                case "bowl":
+                                case "smoothie":
+                                    intent.putExtra("col1", "Ingredients");
+                                    intent.putExtra("col2", "Specification");
+                                    intent.putExtra("col3", "Quantity");
+                                    intent.putExtra("col4", "Unit");
+                                    break;
+                                default:
+                                    // Default column headers
+                                    intent.putExtra("col1", "Ingredients");
+                                    intent.putExtra("col2", "Amount");
+                                    intent.putExtra("col3", "Unit");
+                                    intent.putExtra("col4", "-");
+                            }
+                        } else {
+                            // Fallback column headers if category is null
+                            intent.putExtra("col1", "Ingredients");
+                            intent.putExtra("col2", "Amount");
+                            intent.putExtra("col3", "Unit");
+                            intent.putExtra("col4", "-");
+                        }
+
+                        // Pass recipe data
+                        intent.putExtra("recipeTitle", title);
+                        intent.putExtra("ingredients", recipeData.get("ingredients"));
+                        intent.putExtra("instructions", recipeData.get("instructions"));
+                        intent.putExtra("category", recipeData.get("category"));
+
+                        // Start the activity
+                        startActivity(intent);
+                    }
+                }
             }
         });
         recyclerView.setAdapter(recipeAdapter);

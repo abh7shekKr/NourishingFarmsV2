@@ -44,10 +44,62 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
                 .load(data.get("image"))
                 .into(holder.imageView);
 
-        // Set an onClickListener to open a new activity and pass the title text
+        // Set an onClickListener to open a new activity and pass all required data
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, RecipeActivity.class);
             intent.putExtra("recipeTitle", data.get("title"));
+            intent.putExtra("category", data.get("category")); // Add category
+
+            // Add column headers based on category
+            if (data.get("category") != null) {
+                switch (data.get("category")) {
+                    case "salad":
+                        intent.putExtra("col1", "Ingredients");
+                        intent.putExtra("col2", "Weight(g)");
+                        intent.putExtra("col3", "Protein(g)");
+                        intent.putExtra("col4", "Calories(g)");
+                        break;
+                    case "wraps":
+                        intent.putExtra("col1", "Ingredients");
+                        intent.putExtra("col2", "Type");
+                        intent.putExtra("col3", "Weight");
+                        intent.putExtra("col4", "Unit");
+                        break;
+                    case "sandwich":
+                        intent.putExtra("col1", "Ingredients");
+                        intent.putExtra("col2", "Type");
+                        intent.putExtra("col3", "Amount");
+                        intent.putExtra("col4", "Unit");
+                        break;
+                    case "juice":
+                        intent.putExtra("col1", "Ingredients");
+                        intent.putExtra("col2", "Single");
+                        intent.putExtra("col3", "Five");
+                        intent.putExtra("col4", "-");
+                        break;
+                    case "soup":
+                    case "bowl":
+                    case "smoothie":
+                        intent.putExtra("col1", "Ingredients");
+                        intent.putExtra("col2", "Specification");
+                        intent.putExtra("col3", "Quantity");
+                        intent.putExtra("col4", "Unit");
+                        break;
+                    default:
+                        // Default column headers
+                        intent.putExtra("col1", "Ingredients");
+                        intent.putExtra("col2", "Amount");
+                        intent.putExtra("col3", "Unit");
+                        intent.putExtra("col4", "-");
+                }
+            } else {
+                // Fallback column headers if category is null
+                intent.putExtra("col1", "Ingredients");
+                intent.putExtra("col2", "Amount");
+                intent.putExtra("col3", "Unit");
+                intent.putExtra("col4", "-");
+            }
+
             context.startActivity(intent);
         });
     }
