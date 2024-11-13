@@ -212,7 +212,7 @@
                 android:layout_marginBottom="-23dp"
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
-                android:text="Smoothies"
+                android:text="Juices"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -262,6 +262,29 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
+
+            <ImageView
+                android:id="@+id/smoothie"
+                style="@style/my_style"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@id/veggies"
+                android:background="@drawable/category_card_bc"
+                app:srcCompat="@drawable/veggies" />
+
+            <TextView
+                android:id="@+id/smoothietxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/smoothie"
+                android:layout_alignStart="@id/smoothie"
+                android:layout_alignEnd="@id/smoothie"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="-23dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Smoothies"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
         </RelativeLayout>
     </HorizontalScrollView>

@@ -126,6 +126,24 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
+        //Smoothies
+        ImageView smoothieImageView = findViewById(R.id.smoothie);
+
+        smoothieImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the new activity
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+
+                // Pass the ID of the ImageView as an extra (in this case, as a food category)
+                intent.putExtra("foodCategory", "smoothie");
+
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+
 
 
 

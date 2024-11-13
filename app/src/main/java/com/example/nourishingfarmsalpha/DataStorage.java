@@ -1644,6 +1644,155 @@ public class DataStorage {
         row52.put("suggested_pairing", "Coconut Lassi");
         dataTable.add(row52);
 
+        //smoothies
+        // 53) Go Green Smoothie
+        HashMap<String, String> row53 = new HashMap<>();
+        row53.put("table_hd_1", "Ingredients");
+        row53.put("table_hd_2", "Specification");
+        row53.put("table_hd_3", "Quantity");
+        row53.put("table_hd_4", "Unit");
+        row53.put("id", "53");
+        row53.put("title", "Go Green Smoothie");
+        row53.put("ingredients",
+                "Zucchini (Frozen, 65.00, Gms), " +
+                        "Banana (Frozen, 65.00, Gms), " +
+                        "Milk (, 150.00, Gms), " +
+                        "Dates (, 20.00, Gms), " +
+                        "Coconut Fresh (, 10.00, Gms), " +
+                        "Kale (, 10.00, Gms), " +
+                        "Spinach (, 30.00, Gms)"
+        );
+        row53.put("category", "smoothie");
+        row53.put("image", "https://github.com/yourimagepath/go_green_smoothie.png?raw=true");
+        row53.put("ingImg", "gogreensmoothie");
+        row53.put("steps",
+                "• Take zucchini, banana, milk, dates, coconut, kale, and spinach in a JTC blender and blend for 60 seconds.\n" +
+                        "• Pour into a bowl.\n" +
+                        "• Garnish with banana slices, mango cubes, granola, roasted coconut shaves, and pomegranate."
+        );
+        row53.put("important_ingredients", "Kale, Spinach");
+        row53.put("suggested_pairing", "Paneer Pesto Sandwich");
+        dataTable.add(row53);
+
+// 54) Cashew Flaxseed Smoothie
+        HashMap<String, String> row54 = new HashMap<>();
+        row54.put("table_hd_1", "Ingredients");
+        row54.put("table_hd_2", "Specification");
+        row54.put("table_hd_3", "Quantity");
+        row54.put("table_hd_4", "Unit");
+        row54.put("id", "54");
+        row54.put("title", "Cashew Flaxseed Smoothie");
+        row54.put("ingredients",
+                "Banana (, 75.00, Gms), " +
+                        "Zucchini (, 75.00, Gms), " +
+                        "Dates (, 20.00, Gms), " +
+                        "Roasted Cashew (, 25.00, Gms), " +
+                        "Tahini (, 15.00, Gms), " +
+                        "Flax seeds (, 5.00, Gms), " +
+                        "Cinnamon (, 1.00, Gms), " +
+                        "Salt (, 1.00, Gms), " +
+                        "Milk (, 130.00, Gms)"
+        );
+        row54.put("category", "smoothie");
+        row54.put("image", "https://github.com/yourimagepath/cashew_flaxseed_smoothie.png?raw=true");
+        row54.put("ingImg", "cashewflaxseedsmoothie");
+        row54.put("steps",
+                "• Take zucchini, banana, milk, dates, roasted cashew, tahini, flax seeds, cinnamon, and salt in a JTC blender and blend for 60 seconds.\n" +
+                        "• Pour into a bowl.\n" +
+                        "• Garnish with banana slices, roasted cashew, peanut butter, sesame seeds, and pomegranate."
+        );
+        row54.put("important_ingredients", "Tahini, Flax Seeds");
+        row54.put("suggested_pairing", "Paneer Harissa Sandwich");
+        dataTable.add(row54);
+
+// 55) Sweet & Spicy Pineapple Smoothie Bowl
+        HashMap<String, String> row55 = new HashMap<>();
+        row55.put("table_hd_1", "Ingredients");
+        row55.put("table_hd_2", "Specification");
+        row55.put("table_hd_3", "Quantity");
+        row55.put("table_hd_4", "Unit");
+        row55.put("id", "55");
+        row55.put("title", "Sweet & Spicy Pineapple Smoothie Bowl");
+        row55.put("ingredients",
+                "Banana (Frozen, 35.00, Gms), " +
+                        "Zucchini (Frozen, 35.00, Gms), " +
+                        "Pineapple (Frozen, 95.00, Gms), " +
+                        "Milk (, 180.00, Gms), " +
+                        "Flaxseeds (, 5.00, Gms), " +
+                        "Ginger (, 5.00, Gms), " +
+                        "Turmeric (, 1.00, Gms), " +
+                        "Cayenne Pepper (, 2.00, Gms), " +
+                        "Black Pepper (, 1.00, Gms)"
+        );
+        row55.put("category", "smoothie");
+        row55.put("image", "https://github.com/yourimagepath/sweet_spicy_pineapple.png?raw=true");
+        row55.put("ingImg", "sweetspicypineapple");
+        row55.put("steps",
+                "• Take zucchini, banana, pineapple, milk, ginger, cayenne pepper, black pepper, and flax seeds in a JTC blender and blend for 60 seconds.\n" +
+                        "• Pour into a bowl.\n" +
+                        "• Garnish with banana slices, granola, roasted coconut shaves, kiwi slices, and flax seeds."
+        );
+        row55.put("important_ingredients", "Pineapple, Flax Seeds");
+        row55.put("suggested_pairing", "Paneer Harissa Wrap");
+        dataTable.add(row55);
+
+// 56) Vibrant Berry Smoothie
+        HashMap<String, String> row56 = new HashMap<>();
+        row56.put("table_hd_1", "Ingredients");
+        row56.put("table_hd_2", "Specification");
+        row56.put("table_hd_3", "Quantity");
+        row56.put("table_hd_4", "Unit");
+        row56.put("id", "56");
+        row56.put("title", "Vibrant Berry Smoothie");
+        row56.put("ingredients",
+                "Green Zucchini (Frozen, 30.00, Gms), " +
+                        "Yellow Zucchini (Frozen, 30.00, Gms), " +
+                        "Frozen Strawberry (Frozen, 80.00, Gms), " +
+                        "Milk Amul Gold (, 150.00, Ml), " +
+                        "Beetroot (Frozen, 30.00, Gms), " +
+                        "Dates (, 40.00, Gms)"
+        );
+        row56.put("category", "smoothie");
+        row56.put("image", "https://github.com/yourimagepath/vibrant_berry_smoothie.png?raw=true");
+        row56.put("ingImg", "vibrantberrysmoothie");
+        row56.put("steps",
+                "• Take zucchini, strawberries, beetroot, milk, and dates in a JTC blender and blend for 60 seconds.\n" +
+                        "• Pour into a bowl.\n" +
+                        "• Garnish with banana slices, granola, roasted coconut shaves, roasted almond slices, peanut butter, and sesame seeds."
+        );
+        row56.put("important_ingredients", "Strawberries");
+        row56.put("suggested_pairing", "Chicken Harissa Wrap");
+        dataTable.add(row56);
+
+// 57) Acai Berry Smoothie
+        HashMap<String, String> row57 = new HashMap<>();
+        row57.put("table_hd_1", "Ingredients");
+        row57.put("table_hd_2", "Specification");
+        row57.put("table_hd_3", "Quantity");
+        row57.put("table_hd_4", "Unit");
+        row57.put("id", "57");
+        row57.put("title", "Acai Berry Smoothie");
+        row57.put("ingredients",
+                "Green Zucchini (Frozen, 30.00, Gms), " +
+                        "Yellow Zucchini (Frozen, 30.00, Gms), " +
+                        "Frozen Strawberry (Frozen, 80.00, Gms), " +
+                        "Milk Amul Gold (, 150.00, Ml), " +
+                        "Acai powder (, 3.00, Gms), " +
+                        "Dates (, 40.00, Gms), " +
+                        "Beetroot (Frozen, 30.00, Gms)"
+        );
+        row57.put("category", "smoothie");
+        row57.put("image", "https://github.com/yourimagepath/acai_berry_smoothie.png?raw=true");
+        row57.put("ingImg", "acaiberrysmoothie");
+        row57.put("steps",
+                "• Take zucchini, acai powder, strawberries, beetroot, milk, and dates in a JTC blender and blend for 60 seconds.\n" +
+                        "• Pour into a bowl.\n" +
+                        "• Garnish with banana slices, granola, roasted coconut shaves, roasted almond slices, peanut butter, and sesame seeds."
+        );
+        row57.put("important_ingredients", "Acai Powder, Strawberries");
+        row57.put("suggested_pairing", "Paneer Pesto Wrap");
+        dataTable.add(row57);
+
     }
     public ArrayList<HashMap<String, String>> getDataTable() {
         return dataTable;
