@@ -1039,6 +1039,7 @@ public class DataStorage {
         row33.put("table_hd_1", "Ingredients");
         row33.put("table_hd_2", "Single Serving");
         row33.put("table_hd_3", "5 Serving");
+        row33.put("table_hd_4", "-");
         row33.put("id", "33");
         row33.put("title", "Green Goodness");
         row33.put("ingredients",
@@ -1200,6 +1201,448 @@ public class DataStorage {
         row39.put("suggested_pairing", "Couscous Salad");
         dataTable.add(row39);
 
+
+        //Soups
+        // Roasted Cherry Tomato n Basil Soup
+        HashMap<String, String> row40 = new HashMap<>();
+        row40.put("table_hd_1", "Ingredients");
+        row40.put("table_hd_2", "Specification");
+        row40.put("table_hd_3", "Quantity");
+        row40.put("table_hd_4", "Unit");
+        row40.put("id", "40");
+        row40.put("title", "Roasted Cherry Tomato n Basil");
+        row40.put("ingredients",
+                "Tomato (cubes,300.00,Gms),"+
+                        "Cherry Tomato (,5.00,Gms), " +
+                        "Olive Oil Blend (,5.00,Gms), " +
+                        "Garlic (sliced,10.00,Gms), " +
+                        "Onion (chopped,20.00,Gms), " +
+                        "Black Pepper Powder (,1.00,Gms), " +
+                        "Salt (,2.00,Gms), " +
+                        "Veg Broth (,1.00,Gms), " +
+                        "Water (,160.00,Gms), " +
+                        "Beetroot (,10.00,Gms), " +
+                        "Basil (,10.00,Gms), " +
+                        "Oregano Spice Sprinkler (2.00 Gms)"
+        );
+        row40.put("category", "soup");
+        row40.put("image", "https://github.com/yourimagepath/roasted_cherry_tomato_basil.png?raw=true");
+        row40.put("ingImg", "roastedcherrytomatobasil");
+        row40.put("steps", "• Chop onions and garlic.\n" +
+                "• Cut tomatoes into quarters and boil them.\n" +
+                "• Heat olive oil in a pan, add garlic and onions, and sauté for 2-3 minutes.\n" +
+                "• Add oregano, black pepper, and veg broth powder.\n" +
+                "• Once tomatoes are cooked, strain and cool.\n" +
+                "• Blend tomatoes, basil, and sautéed onion-garlic with water.\n" +
+                "• Strain, add salt if needed, and store.\n"
+        );
+        row40.put("important_ingredients", "Basil");
+        row40.put("suggested_pairing", "Chicken Harissa SW");
+        dataTable.add(row40);
+
+        // Confit Garlic Mushroom Soup
+        HashMap<String, String> row41 = new HashMap<>();
+        row41.put("table_hd_1", "Ingredients");
+        row41.put("table_hd_2", "Specification");
+        row41.put("table_hd_3", "Quantity");
+        row41.put("table_hd_4", "Unit");
+        row41.put("id", "41");
+        row41.put("title", "Confit Garlic Mushroom Soup");
+        row41.put("ingredients",
+                "Olive Oil Blend (,5.00,Gms), " +
+                        "Garlic (Whole,30.00,Gms), " +
+                        "Onion (chopped,20.00,Gms), " +
+                        "Mushroom (,200.00,Gms), " +
+                        "Oregano Spice Sprinkler (,3.00,Gms), " +
+                        "Water (,270.00,Gms), " +
+                        "Salt (,2.00,Gms), " +
+                        "Black Pepper Powder (,1.00,Gms), " +
+                        "Veg Broth (,1.00,Gms)"
+        );
+        row41.put("category", "soup");
+        row41.put("image", "https://github.com/yourimagepath/confit_garlic_mushroom.png?raw=true");
+        row41.put("ingImg", "confitgarlicmushroom");
+        row41.put("steps", "• Chop onions and slice mushrooms.\n" +
+                "• Heat olive oil in a pan, add garlic, and sauté for a minute.\n" +
+                "• Add onions and sauté further.\n" +
+                "• Add mushrooms and cook for 2-3 minutes.\n" +
+                "• Add oregano, black pepper, and veg broth powder, then cool.\n" +
+                "• Blend with water, strain, and add salt if needed.\n"
+        );
+        row41.put("important_ingredients", "Parsley");
+        row41.put("suggested_pairing", "Paneer Harissa SW");
+        dataTable.add(row41);
+
+        // Broccoli and Almond Soup
+        HashMap<String, String> row42 = new HashMap<>();
+        row42.put("table_hd_1", "Ingredients");
+        row42.put("table_hd_2", "Specification");
+        row42.put("table_hd_3", "Quantity");
+        row42.put("table_hd_4", "Unit");
+        row42.put("id", "42");
+        row42.put("title", "Broccoli and Almond Soup");
+        row42.put("ingredients",
+                "Olive Oil Blend (,5.00,Ml), " +
+                        "Garlic (Sliced,10.00,Gms), " +
+                        "Onion (Chopped,20.00,Gms), " +
+                        "Broccoli (,175.00,Gms), " +
+                        "Almond (3numbers,5.00,Gms), " +
+                        "Water (,470.00,Ml), " +
+                        "Salt (,2.00,Gms), " +
+                        "Spinach (,10.00,Gms), " +
+                        "Black Pepper Powder (,1.00,Gms), " +
+                        "Cheddar Cheese (,40.00,Gms), " +
+                        "Veg Broth (,1.00,Gms)"
+        );
+        row42.put("category", "soup");
+        row42.put("image", "https://github.com/yourimagepath/broccoli_almond.png?raw=true");
+        row42.put("ingImg", "broccolialmond");
+        row42.put("steps", "• Chop onions, slice garlic, and cut broccoli into florets.\n" +
+                "• Heat olive oil, add onions and garlic, and sauté.\n" +
+                "• Boil water with salt, add broccoli, and cook.\n" +
+                "• Add spinach, strain, add cheddar cheese, and check seasoning.\n" +
+                "• Cool, blend, strain, and store.\n"
+        );
+        row42.put("important_ingredients", "Parsley");
+        row42.put("suggested_pairing", "Paneer Pesto SW");
+        dataTable.add(row42);
+
+        //Warm bowls
+// 43) Paneer Thai Green Curry Barley Bowl
+        HashMap<String, String> row43 = new HashMap<>();
+        row43.put("table_hd_1", "Ingredients");
+        row43.put("table_hd_2", "Specification");
+        row43.put("table_hd_3", "Quantity");
+        row43.put("table_hd_4", "Unit");
+        row43.put("id", "43");
+        row43.put("title", "Paneer Thai Green Curry Barley Bowl");
+        row43.put("ingredients",
+                "Roasted Paneer (cubes/ Roasted, 50.00, Gms), " +
+                        "Thai Green Curry (, 100.00, Ml), " +
+                        "Boiled Barley (Boiled, 80.00, Gms), " +
+                        "Mix Lettuce (, 20.00, Gms), " +
+                        "Roasted Zucchini (Roasted, 25.00, Gms), " +
+                        "Roasted Capsicum (Roasted, 25.00, Gms), " +
+                        "Roasted Corn (Boiled, 20.00, Gms), " +
+                        "Sliced Black Olives (Sliced, 5.00, Gms), " +
+                        "Roasted Carrots (Cubes Boiled, 20.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "Roasted French Beans (One inch blanched, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row43.put("category", "bowl");
+        row43.put("image", "https://github.com/yourimagepath/paneer_thai_green_curry.png?raw=true");
+        row43.put("ingImg", "paneerthaigreencurry");
+        row43.put("steps",
+                "• Cut carrots, zucchini, and capsicum in cubes. Cut French beans approx. 1 inch.\n" +
+                        "• Boil corn, French beans, and carrots. Sauté zucchini and capsicum.\n" +
+                        "• Warm paneer, Thai green curry, and barley in microwave.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Start with vegetables, barley, protein, cherry tomatoes, and garnish with basil.\n" +
+                        "• Serve warm."
+        );
+        row43.put("important_ingredients", "Roasted Paneer, Thai Green Curry, Barley");
+        row43.put("suggested_pairing", "Green Goodness Juice");
+        dataTable.add(row43);
+
+// 44) Chicken Thai Green Curry Barley Bowl
+        HashMap<String, String> row44 = new HashMap<>();
+        row44.put("table_hd_1", "Ingredients");
+        row44.put("table_hd_2", "Specification");
+        row44.put("table_hd_3", "Quantity");
+        row44.put("table_hd_4", "Unit");
+        row44.put("id", "44");
+        row44.put("title", "Chicken Thai Green Curry Barley Bowl");
+        row44.put("ingredients",
+                "Chicken (cubes/ Roasted, 50.00, Gms), " +
+                        "Thai Green Curry (, 100.00, Ml), " +
+                        "Barley (Boiled, 80.00, Gms), " +
+                        "Mix Lettuce (, 20.00, Gms), " +
+                        "Zucchini cubes (Roasted, 25.00, Gms), " +
+                        "Mix Pepper Cubes (Roasted, 25.00, Gms), " +
+                        "Corn (Boiled, 20.00, Gms), " +
+                        "Olives (Sliced, 5.00, Gms), " +
+                        "Carrots (Cubes Boiled, 20.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "French Beans (One inch blanched, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row44.put("category", "bowl");
+        row44.put("image", "https://github.com/yourimagepath/chicken_thai_green_curry.png?raw=true");
+        row44.put("ingImg", "chickenthaigreencurry");
+        row44.put("steps",
+                "• Cut carrots, zucchini, and capsicum in cubes. Cut French beans approx. 1 inch.\n" +
+                        "• Boil corn, French beans, and carrots. Sauté zucchini and capsicum.\n" +
+                        "• Warm chicken, Thai green curry, and barley in microwave.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Start with vegetables, barley, protein, cherry tomatoes, and garnish with basil.\n" +
+                        "• Serve warm."
+        );
+        row44.put("important_ingredients", "Roasted Chicken, Thai Green Curry, Barley");
+        row44.put("suggested_pairing", "Valencia Orange Juice");
+        dataTable.add(row44);
+
+// 45) Tofu Thai Red Curry Black Rice Bowl
+        HashMap<String, String> row45 = new HashMap<>();
+        row45.put("table_hd_1", "Ingredients");
+        row45.put("table_hd_2", "Specification");
+        row45.put("table_hd_3", "Quantity");
+        row45.put("table_hd_4", "Unit");
+        row45.put("id", "45");
+        row45.put("title", "Tofu Thai Red Curry Black Rice Bowl");
+        row45.put("ingredients",
+                "Tofu (cubes/ Roasted, 50.00, Gms), " +
+                        "Thai Red Curry (, 100.00, Ml), " +
+                        "Black Rice (Boiled, 80.00, Gms), " +
+                        "Lettuce (, 20.00, Gms), " +
+                        "Zucchini cubes (Roasted, 25.00, Gms), " +
+                        "Mix Pepper Cubes (Roasted, 25.00, Gms), " +
+                        "Corn (Boiled, 20.00, Gms), " +
+                        "Olives (Sliced, 5.00, Gms), " +
+                        "Carrots (Cubes Boiled, 20.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "French Beans (One inch blanched, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row45.put("category", "bowl");
+        row45.put("image", "https://github.com/yourimagepath/tofu_thai_red_curry.png?raw=true");
+        row45.put("ingImg", "tofuthairedcurry");
+        row45.put("steps",
+                "• Cut carrots, zucchini, and capsicum in cubes. Cut French beans approx. 1 inch.\n" +
+                        "• Boil corn, French beans, and carrots. Sauté zucchini and capsicum.\n" +
+                        "• Warm tofu, Thai red curry, and black rice in microwave.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Start with vegetables, black rice, protein, cherry tomatoes, and garnish with basil.\n" +
+                        "• Serve warm."
+        );
+        row45.put("important_ingredients", "Roasted Tofu, Thai Red Curry, Black Rice");
+        row45.put("suggested_pairing", "Tropical Paradise Juice");
+        dataTable.add(row45);
+
+// 46) Chicken Thai Red Curry Black Rice Bowl
+        HashMap<String, String> row46 = new HashMap<>();
+        row46.put("table_hd_1", "Ingredients");
+        row46.put("table_hd_2", "Specification");
+        row46.put("table_hd_3", "Quantity");
+        row46.put("table_hd_4", "Unit");
+        row46.put("id", "46");
+        row46.put("title", "Chicken Thai Red Curry Black Rice Bowl");
+        row46.put("ingredients",
+                "Chicken (cubes/ Roasted, 50.00, Gms), " +
+                        "Thai Red Curry (, 100.00, Ml), " +
+                        "Black Rice (Boiled, 80.00, Gms), " +
+                        "Lettuce (, 20.00, Gms), " +
+                        "Zucchini cubes (Roasted, 25.00, Gms), " +
+                        "Mix Pepper Cubes (Roasted, 25.00, Gms), " +
+                        "Corn (Boiled, 20.00, Gms), " +
+                        "Olives (Sliced, 5.00, Gms), " +
+                        "Carrots (Cubes Boiled, 20.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "French Beans (One inch blanched, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row46.put("category", "bowl");
+        row46.put("image", "https://github.com/yourimagepath/chicken_thai_red_curry.png?raw=true");
+        row46.put("ingImg", "chickenthairedcurry");
+        row46.put("steps",
+                "• Cut carrots, zucchini, and capsicum in cubes. Cut French beans approx. 1 inch.\n" +
+                        "• Boil corn, French beans, and carrots. Sauté zucchini and capsicum.\n" +
+                        "• Warm chicken, Thai red curry, and black rice in microwave.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Start with vegetables, black rice, protein, cherry tomatoes, and garnish with basil.\n" +
+                        "• Serve warm."
+        );
+        row46.put("important_ingredients", "Roasted Chicken, Thai Red Curry, Black Rice");
+        row46.put("suggested_pairing", "Citrus Bliss Juice");
+        dataTable.add(row46);
+
+        // 47) Roasted Vegetable Thai Red Curry Black Rice Bowl
+        HashMap<String, String> row47 = new HashMap<>();
+        row47.put("table_hd_1", "Ingredients");
+        row47.put("table_hd_2", "Specification");
+        row47.put("table_hd_3", "Quantity");
+        row47.put("table_hd_4", "Unit");
+        row47.put("id", "47");
+        row47.put("title", "Roasted Vegetable Thai Red Curry Black Rice Bowl");
+        row47.put("ingredients",
+                "Roasted Vegetables (Zucchini, Capsicum, Carrots, 50.00, Gms), " +
+                        "Thai Red Curry (, 100.00, Ml), " +
+                        "Black Rice (Boiled, 80.00, Gms), " +
+                        "Mix Lettuce (, 20.00, Gms), " +
+                        "Corn (Boiled, 20.00, Gms), " +
+                        "Olives (Sliced, 5.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "French Beans (One inch blanched, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row47.put("category", "bowl");
+        row47.put("image", "https://github.com/yourimagepath/roasted_vegetable_thai_red_curry.png?raw=true");
+        row47.put("ingImg", "roastedvegetablethairedcurry");
+        row47.put("steps",
+                "• Roast zucchini, capsicum, and carrots.\n" +
+                        "• Boil corn, French beans, and black rice.\n" +
+                        "• Warm Thai red curry.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Garnish with basil and serve warm."
+        );
+        row47.put("important_ingredients", "Roasted Vegetables, Thai Red Curry, Black Rice");
+        row47.put("suggested_pairing", "Tropical Paradise Juice");
+        dataTable.add(row47);
+
+// 48) Tofu Miso Black Rice Bowl
+        HashMap<String, String> row48 = new HashMap<>();
+        row48.put("table_hd_1", "Ingredients");
+        row48.put("table_hd_2", "Specification");
+        row48.put("table_hd_3", "Quantity");
+        row48.put("table_hd_4", "Unit");
+        row48.put("id", "48");
+        row48.put("title", "Tofu Miso Black Rice Bowl");
+        row48.put("ingredients",
+                "Tofu (Cubes Roasted, 50.00, Gms), " +
+                        "Miso Paste (, 15.00, Gms), " +
+                        "Black Rice (Boiled, 80.00, Gms), " +
+                        "Lettuce (, 20.00, Gms), " +
+                        "Zucchini (Roasted, 25.00, Gms), " +
+                        "Carrots (Cubes Boiled, 20.00, Gms), " +
+                        "French Beans (One inch blanched, 10.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row48.put("category", "bowl");
+        row48.put("image", "https://github.com/yourimagepath/tofu_miso_black_rice.png?raw=true");
+        row48.put("ingImg", "tofumiso");
+        row48.put("steps",
+                "• Roast tofu, zucchini, and carrots.\n" +
+                        "• Prepare miso paste and warm black rice.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Garnish with basil and serve warm."
+        );
+        row48.put("important_ingredients", "Roasted Tofu, Miso Paste, Black Rice");
+        row48.put("suggested_pairing", "Ginger Zest Juice");
+        dataTable.add(row48);
+
+// 49) Chicken Miso Black Rice Bowl
+        HashMap<String, String> row49 = new HashMap<>();
+        row49.put("table_hd_1", "Ingredients");
+        row49.put("table_hd_2", "Specification");
+        row49.put("table_hd_3", "Quantity");
+        row49.put("table_hd_4", "Unit");
+        row49.put("id", "49");
+        row49.put("title", "Chicken Miso Black Rice Bowl");
+        row49.put("ingredients",
+                "Chicken (Cubes Roasted, 50.00, Gms), " +
+                        "Miso Paste (, 15.00, Gms), " +
+                        "Black Rice (Boiled, 80.00, Gms), " +
+                        "Lettuce (, 20.00, Gms), " +
+                        "Zucchini (Roasted, 25.00, Gms), " +
+                        "Carrots (Cubes Boiled, 20.00, Gms), " +
+                        "French Beans (One inch blanched, 10.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row49.put("category", "bowl");
+        row49.put("image", "https://github.com/yourimagepath/chicken_miso_black_rice.png?raw=true");
+        row49.put("ingImg", "chickenmiso");
+        row49.put("steps",
+                "• Roast chicken, zucchini, and carrots.\n" +
+                        "• Prepare miso paste and warm black rice.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Garnish with basil and serve warm."
+        );
+        row49.put("important_ingredients", "Roasted Chicken, Miso Paste, Black Rice");
+        row49.put("suggested_pairing", "Lemon Ginger Juice");
+        dataTable.add(row49);
+
+// 50) Paneer Butter Masala Quinoa Bowl
+        HashMap<String, String> row50 = new HashMap<>();
+        row50.put("table_hd_1", "Ingredients");
+        row50.put("table_hd_2", "Specification");
+        row50.put("table_hd_3", "Quantity");
+        row50.put("table_hd_4", "Unit");
+        row50.put("id", "50");
+        row50.put("title", "Paneer Butter Masala Quinoa Bowl");
+        row50.put("ingredients",
+                "Paneer (Roasted, 50.00, Gms), " +
+                        "Butter Masala Sauce (, 100.00, Ml), " +
+                        "Quinoa (Boiled, 80.00, Gms), " +
+                        "Lettuce (, 20.00, Gms), " +
+                        "Corn (Boiled, 20.00, Gms), " +
+                        "French Beans (One inch blanched, 10.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row50.put("category", "bowl");
+        row50.put("image", "https://github.com/yourimagepath/paneer_butter_masala_quinoa.png?raw=true");
+        row50.put("ingImg", "paneerbuttermasala");
+        row50.put("steps",
+                "• Roast paneer.\n" +
+                        "• Warm butter masala sauce and boiled quinoa.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Garnish with basil and serve warm."
+        );
+        row50.put("important_ingredients", "Paneer, Butter Masala Sauce, Quinoa");
+        row50.put("suggested_pairing", "Mango Lassi");
+        dataTable.add(row50);
+
+// 51) Chicken Butter Masala Quinoa Bowl
+        HashMap<String, String> row51 = new HashMap<>();
+        row51.put("table_hd_1", "Ingredients");
+        row51.put("table_hd_2", "Specification");
+        row51.put("table_hd_3", "Quantity");
+        row51.put("table_hd_4", "Unit");
+        row51.put("id", "51");
+        row51.put("title", "Chicken Butter Masala Quinoa Bowl");
+        row51.put("ingredients",
+                "Chicken (Roasted, 50.00, Gms), " +
+                        "Butter Masala Sauce (, 100.00, Ml), " +
+                        "Quinoa (Boiled, 80.00, Gms), " +
+                        "Lettuce (, 20.00, Gms), " +
+                        "Corn (Boiled, 20.00, Gms), " +
+                        "French Beans (One inch blanched, 10.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row51.put("category", "bowl");
+        row51.put("image", "https://github.com/yourimagepath/chicken_butter_masala_quinoa.png?raw=true");
+        row51.put("ingImg", "chickenbuttermasala");
+        row51.put("steps",
+                "• Roast chicken.\n" +
+                        "• Warm butter masala sauce and boiled quinoa.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Garnish with basil and serve warm."
+        );
+        row51.put("important_ingredients", "Chicken, Butter Masala Sauce, Quinoa");
+        row51.put("suggested_pairing", "Mint Lassi");
+        dataTable.add(row51);
+
+// 52) Vegetable Butter Masala Quinoa Bowl
+        HashMap<String, String> row52 = new HashMap<>();
+        row52.put("table_hd_1", "Ingredients");
+        row52.put("table_hd_2", "Specification");
+        row52.put("table_hd_3", "Quantity");
+        row52.put("table_hd_4", "Unit");
+        row52.put("id", "52");
+        row52.put("title", "Vegetable Butter Masala Quinoa Bowl");
+        row52.put("ingredients",
+                "Mixed Vegetables (Zucchini, Carrots, Corn, 50.00, Gms), " +
+                        "Butter Masala Sauce (, 100.00, Ml), " +
+                        "Quinoa (Boiled, 80.00, Gms), " +
+                        "Lettuce (, 20.00, Gms), " +
+                        "Cherry Tomato (Cut In Half, 10.00, Gms), " +
+                        "Basil (Julienne, garnish, 2.00, Gms)"
+        );
+        row52.put("category", "bowl");
+        row52.put("image", "https://github.com/yourimagepath/vegetable_butter_masala_quinoa.png?raw=true");
+        row52.put("ingImg", "vegetablebuttermasala");
+        row52.put("steps",
+                "• Sauté mixed vegetables.\n" +
+                        "• Warm butter masala sauce and boiled quinoa.\n" +
+                        "• Arrange mix lettuce, sauce in container, then ingredients vertically.\n" +
+                        "• Garnish with basil and serve warm."
+        );
+        row52.put("important_ingredients", "Mixed Vegetables, Butter Masala Sauce, Quinoa");
+        row52.put("suggested_pairing", "Coconut Lassi");
+        dataTable.add(row52);
 
     }
     public ArrayList<HashMap<String, String>> getDataTable() {

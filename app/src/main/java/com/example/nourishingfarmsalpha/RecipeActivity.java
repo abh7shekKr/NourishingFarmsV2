@@ -191,29 +191,32 @@ public class RecipeActivity extends AppCompatActivity {
 
 
     private void populateIngredientsTable(TableLayout ingredientsTable, String ingredients, String category) {
-        // Pattern for salads
+        // Existing patterns for other categories
         Pattern saladPattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g)\\)");
-        // Pattern for wraps
         Pattern wrapPattern = Pattern.compile("([a-zA-Z ]+) \\(([a-zA-Z,]+)?(?:,)?(\\d+(?:\\.\\d+)?g)(?:,)?(\\w+)?\\)");
-
         Pattern sandwichPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*)?,?(\\d+(?:\\.\\d+)?),?([a-zA-Z]+)?\\)");
+        Pattern juicePattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?\\s*[a-zA-Z]+), (\\d+(?:\\.\\d+)?\\s*[a-zA-Z]+)\\)");
+        Pattern soupPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),([0-9.]+),([a-zA-Z]+)\\)");
+
+        // New pattern for "bowl" items
+        Pattern bowlPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?),\\s*([a-zA-Z]+)\\)");
 
         Matcher matcher;
         if (category.equals("salad")) {
             matcher = saladPattern.matcher(ingredients);
-        }
-        else if(category.equals("wraps")) {
+        } else if (category.equals("wraps")) {
             matcher = wrapPattern.matcher(ingredients);
-        }
-        else if(category.equals("sandwich")){
+        } else if (category.equals("sandwich")) {
             matcher = sandwichPattern.matcher(ingredients);
+        } else if (category.equals("juice")) {
+            matcher = juicePattern.matcher(ingredients);
+        } else if (category.equals("soup")) {
+            matcher = soupPattern.matcher(ingredients);
+        } else if (category.equals("bowl")) {
+            matcher = bowlPattern.matcher(ingredients);
+        } else {
+            matcher = saladPattern.matcher(ingredients); // Default to salad pattern if category not recognized
         }
-        else
-        {
-            //default case
-            matcher = saladPattern.matcher(ingredients);
-        }
-
 
         while (matcher.find()) {
             TableRow tableRow = new TableRow(this);
@@ -225,7 +228,7 @@ public class RecipeActivity extends AppCompatActivity {
                 tableRow.addView(createTextView(matcher.group(2)));
                 tableRow.addView(createTextView(matcher.group(3)));
                 tableRow.addView(createTextView(matcher.group(4)));
-            } else if(category.equals("wraps")) {
+            } else if (category.equals("wraps")) {
                 tableRow.addView(createTextView(matcher.group(2) != null ? matcher.group(2) : ""));
                 tableRow.addView(createTextView(matcher.group(3)));
                 tableRow.addView(createTextView(matcher.group(4) != null ? matcher.group(4) : ""));
@@ -233,11 +236,24 @@ public class RecipeActivity extends AppCompatActivity {
                 tableRow.addView(createTextView(matcher.group(2) != null ? matcher.group(2) : ""));
                 tableRow.addView(createTextView(matcher.group(3)));
                 tableRow.addView(createTextView(matcher.group(4) != null ? matcher.group(4) : ""));
+            } else if (category.equals("juice")) {
+                tableRow.addView(createTextView(matcher.group(2))); // Single Serving Amount and Unit
+                tableRow.addView(createTextView(matcher.group(3))); // Five Serving Amount and Unit
+                tableRow.addView(createTextView("-")); // Empty cell as a placeholder for consistency
+            } else if (category.equals("soup")) {
+                tableRow.addView(createTextView(matcher.group(2).isEmpty() ? "-" : matcher.group(2))); // Specification
+                tableRow.addView(createTextView(matcher.group(3))); // Quantity
+                tableRow.addView(createTextView(matcher.group(4))); // Unit
+            } else if (category.equals("bowl")) {
+                tableRow.addView(createTextView(matcher.group(2))); // Specification
+                tableRow.addView(createTextView(matcher.group(3))); // Quantity
+                tableRow.addView(createTextView(matcher.group(4))); // Unit
             }
 
             ingredientsTable.addView(tableRow);
         }
     }
+
 
     private TextView createTextView(String text) {
         TextView textView = new TextView(this);

@@ -118,7 +118,7 @@ public class HomeActivity extends AppCompatActivity {
                 Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
 
                 // Pass the ID of the ImageView as an extra (in this case, as a food category)
-                intent.putExtra("foodCategory", "veggies");
+                intent.putExtra("foodCategory", "bowl");
 
                 // Start the new activity
                 startActivity(intent);
