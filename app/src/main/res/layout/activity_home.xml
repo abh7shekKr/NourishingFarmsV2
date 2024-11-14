@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:width="220dp"
         android:fontFamily="@font/poppins"
-        android:text="@string/which_food_would_you_like_to_cook"
+        android:text="A Farm to Fork Company"
         android:textColor="#424242"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView2"

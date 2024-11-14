@@ -585,7 +585,7 @@ public class DataStorage {
                         "Cheese Slice (10g,Gms)"
         );
         row17.put("category", "wraps");
-        row17.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/roasted_veg_wrap.png?raw=true");
+        row17.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/egg%20and%20cheese%20wrap.jpg?raw=true");
         row17.put("ingImg", "roastedvegwrap");
         row17.put("steps", "• Warm wrap on grill pan on both sides. Warm roast veg filling in microwavable bowl meanwhile.\n" +
                 "• Apply harissa on middle of wrap, then layer with lettuce, roasted vegetables, onion rings.\n" +
@@ -617,7 +617,7 @@ public class DataStorage {
                         "Cucumber (15g,Gms)"
         );
         row18.put("category", "wraps");
-        row18.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pesto_paneer_wrap.png?raw=true");
+        row18.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/pesto%20paneer%20wrap.jpg?raw=true");
         row18.put("ingImg", "pestopaneerwrap");
         row18.put("steps", "• Warm wrap on grill pan on both sides. Warm paneer pesto in microwavable bowl meanwhile.\n" +
                 "• Apply Pesto on middle of wrap, layer with lettuce, onion rings, tomato slices, cucumber.\n" +
@@ -649,7 +649,7 @@ public class DataStorage {
                         "Cucumber (Sliced,15g,Gms)"
         );
         row19.put("category", "wraps");
-        row19.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pesto_chicken_wrap.png?raw=true");
+        row19.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/pesto%20chicken%20wrap.jpg?raw=true");
         row19.put("ingImg", "pestochickenwrap");
         row19.put("steps", "• Warm wrap on grill pan on both sides. Warm chicken pesto in microwavable bowl meanwhile.\n" +
                 "• Apply Pesto on middle of wrap, layer with lettuce, onion rings, tomato slices, cucumber.\n" +
@@ -681,7 +681,7 @@ public class DataStorage {
                         "Cucumber (Sliced,15g,Gms)"
         );
         row20.put("category", "wraps");
-        row20.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/paneer_harissa_wrap.png?raw=true");
+        row20.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/harissa%20paneer%20wrap.jpg?raw=true");
         row20.put("ingImg", "paneerharissawrap");
         row20.put("steps", "• Warm wrap on grill pan on both sides. Warm harissa paneer slices in microwavable bowl meanwhile.\n" +
                 "• Apply Harissa on middle of wrap, layer with lettuce, onion rings, tomato slices, cucumber.\n" +
@@ -713,7 +713,7 @@ public class DataStorage {
                         "Cucumber (Sliced,15g,Gms)"
         );
         row21.put("category", "wraps");
-        row21.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/chicken_harissa_wrap.png?raw=true");
+        row21.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/harissa%20chicken%20wrap.jpg?raw=true");
         row21.put("ingImg", "chickenharissawrap");
         row21.put("steps", "• Warm wrap on grill pan on both sides. Warm harissa chicken slices in microwavable bowl meanwhile.\n" +
                 "• Apply Harissa on middle of wrap, layer with lettuce, onion rings, tomato slices, cucumber.\n" +
@@ -724,7 +724,8 @@ public class DataStorage {
                 "• Cut angular and serve with pepper and cucumber pickles.\n");
         dataTable.add(row21);
 
-        // Egg n cheese Sandwich
+
+        // Egg n cheese wrap
         HashMap<String, String> row22 = new HashMap<>();
         row22.put("table_hd_1","Ingredients");
         row22.put("table_hd_2","Specification");
@@ -742,8 +743,8 @@ public class DataStorage {
                         "Cheese Sliced (10g,Gms)"
         );
         row22.put("category", "wraps");
-        row22.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/egg_n_cheese_sandwich.png?raw=true");
-        row22.put("ingImg", "eggncheesesandwich");
+        row22.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/egg%20and%20cheese%20wrap.jpg?raw=true");
+        row22.put("ingImg", "eggncheesewrap");
         row22.put("steps", "• Warm wrap on grill pan on both sides. Beat one egg, add salt n pepper, make thin omelette.\n" +
                 "• Apply Harissa on middle of wrap, layer with lettuce, onion rings, omelette, sundried tomato and cheese slice.\n" +
                 "• Adjust filling in the middle, fold left and right edges toward the middle.\n" +
@@ -753,13 +754,14 @@ public class DataStorage {
         dataTable.add(row22);
 
         // Classic Bombay Wrap
+        // same images copied images, need to be changed futher
         HashMap<String, String> row23 = new HashMap<>();
         row23.put("table_hd_1","Ingredients");
         row23.put("table_hd_2","Specification");
         row23.put("table_hd_3","Quantity");
         row23.put("table_hd_4","Unit");
         row23.put("id", "23");
-        row23.put("title", "Classic Bombay Wrap");
+        row23.put("title", "Classic Bombay Sandwich");
         row23.put("ingredients",
                 "Wrap (No,1 No.,No)," +
                         "Green Chatni (25g,Gms)," +
@@ -771,8 +773,8 @@ public class DataStorage {
                         "Garam Masala, chaat Masala (2g,Gms)," +
                         "Cheese Slice (10g)"
         );
-        row23.put("category", "wraps");
-        row23.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/classic_bombay_sandwich.png?raw=true");
+        row23.put("category", "sandwich");
+        row23.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/classic%20bombay%20sandwich.jpg?raw=true");
         row23.put("ingImg", "classicbombaysandwich");
         row23.put("steps", "• Warm both bread slices on grill pan on both sides.\n" +
                 "• Apply Green chutney on bread, layer with lettuce, onion rings, tomato slices, cucumber slices, boiled potato slices.\n" +
@@ -805,7 +807,7 @@ public class DataStorage {
                         "Cheese Slice (,10.00,Gms)"
         );
         row25.put("category", "sandwich");
-        row25.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/roasted_veg_sandwich.png?raw=true");
+        row25.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/roasted%20vegetable%20sandwich.jpg?raw=true");
         row25.put("ingImg", "roastedvegsandwich");
         row25.put("steps", "• Warm both bread slices on grill pan on both the sides. Warm roast veg filling in microwavable bowl meanwhile.\n" +
                 "• Apply harissa on bread, then layer it with lettuce, roasted vegetables, onion rings.\n" +
@@ -837,7 +839,7 @@ public class DataStorage {
                         "Cucumber (Sliced,15.00,Gms)"
         );
         row26.put("category", "sandwich");
-        row26.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pesto_paneer_sandwich.png?raw=true");
+        row26.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/pesto%20paneer%20sandwich.jpg?raw=true");
         row26.put("ingImg", "pestopaneersandwich");
         row26.put("steps", "• Warm both bread slices on grill pan on both the sides. Warm paneer pesto in microwavable bowl meanwhile.\n" +
                 "• Apply Pesto on bread, then layer it with lettuce, onion rings, tomato slices, cucumber.\n" +
@@ -869,7 +871,7 @@ public class DataStorage {
                         "Cucumber (Sliced,15.00,Gms)"
         );
         row27.put("category", "sandwich");
-        row27.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/pesto_chicken_sandwich.png?raw=true");
+        row27.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/pesto%20chicken%20sandwich.jpg?raw=true");
         row27.put("ingImg", "pestochickensandwich");
         row27.put("steps", "• Warm both bread slices on grill pan on both the sides. Warm Chicken pesto in microwavable bowl meanwhile.\n" +
                 "• Apply Pesto on bread, then layer it with lettuce, onion rings, tomato slices, cucumber.\n" +
@@ -901,7 +903,7 @@ public class DataStorage {
                         "Cucumber (Sliced,15.00,Gms)"
         );
         row28.put("category", "sandwich");
-        row28.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/paneer_harissa_sandwich.png?raw=true");
+        row28.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/harissa%20paneer%20sandwich.jpg?raw=true");
         row28.put("ingImg", "paneerharissasandwich");
         row28.put("steps", "• Warm both bread slices on grill pan on both the sides. Warm Harissa Paneer slice in microwavable bowl meanwhile.\n" +
                 "• Apply Harissa on bread, then layer it with lettuce, onion rings, tomato slices, cucumber.\n" +
@@ -933,7 +935,7 @@ public class DataStorage {
                         "Cucumber (Sliced,15.00,Gms)"
         );
         row29.put("category", "sandwich");
-        row29.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/chicken_harissa_sandwich.png?raw=true");
+        row29.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/harissa%20chicken%20sandwich.jpg?raw=true");
         row29.put("ingImg", "chickenharissasandwich");
         row29.put("steps", "• Warm both bread slices on grill pan on both the sides. Warm Harissa Chicken slice in microwavable bowl meanwhile.\n" +
                 "• Apply Harissa on bread, then layer it with lettuce, onion rings, tomato slices, cucumber.\n" +
@@ -962,7 +964,7 @@ public class DataStorage {
                         "Cheese Sliced (,10.00,Gms)"
         );
         row30.put("category", "sandwich");
-        row30.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/egg_n_cheese_sandwich.png?raw=true");
+        row30.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/egg%20and%20cheese%20sandwich.jpg?raw=true");
         row30.put("ingImg", "eggncheesesandwich");
         row30.put("steps", "• Warm both bread slices on grill pan on both the sides. Beat one egg add salt n pepper and then make thin omelette of it.\n" +
                 "• Apply Harissa on bread, then layer it with lettuce, onion rings, omelette, sundried tomato and cheese slice.\n" +
@@ -992,7 +994,7 @@ public class DataStorage {
                         "Cheese Slice (,10.00,Gms)"
         );
         row31.put("category", "sandwich");
-        row31.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/classic_bombay_sandwich.png?raw=true");
+        row31.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/classic%20bombay%20sandwich.jpg?raw=true");
         row31.put("ingImg", "classicbombaysandwich");
         row31.put("steps", "• Warm both bread slices on grill pan on both the sides.\n" +
                 "• Apply Green chutney on bread, then layer it with lettuce, onion rings, tomato slices, cucumber slices, boiled potato slices then sprinkle garam masal and chaat masala.\n" +
@@ -1021,7 +1023,7 @@ public class DataStorage {
                         "Mozzarella Grated (,20.00,Gms)"
         );
         row32.put("category", "sandwich");
-        row32.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/capresse_sandwich.png?raw=true");
+        row32.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/caprese%20sandwich.jpg?raw=true");
         row32.put("ingImg", "capressesandwich");
         row32.put("steps", "• Warm both bread slices on grill pan on both the sides.\n" +
                 "• Apply pesto on bread, then layer it with arugula, tomato slices.\n" +
@@ -1054,7 +1056,7 @@ public class DataStorage {
                         "Ginger (6.52 Gms, 32.60 Gms)"
         );
         row33.put("category", "juice");
-        row33.put("image", "https://github.com/yourimagepath/green_goodness.png?raw=true");
+        row33.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/green%20goodness.jpg?raw=true");
         row33.put("ingImg", "greengoodness");
         row33.put("steps", "• Take all the ingredients, wash them properly, and cut them into small pieces.\n" +
                 "• Blend them in a cold press juicer.\n" +
@@ -1079,7 +1081,7 @@ public class DataStorage {
                         "Lemon (5.97 Gms, 29.85 Gms)"
         );
         row34.put("category", "juice");
-        row34.put("image", "https://github.com/yourimagepath/beet_bliss.png?raw=true");
+        row34.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/beet%20bliss.jpg?raw=true");
         row34.put("ingImg", "beetbliss");
         row34.put("steps", "• Take all the ingredients, wash them properly, and cut them into small pieces.\n" +
                 "• Blend them in a cold press juicer.\n" +
@@ -1103,7 +1105,7 @@ public class DataStorage {
                         "Lemon (8.93 Gms, 44.65 Gms)"
         );
         row35.put("category", "juice");
-        row35.put("image", "https://github.com/yourimagepath/red_pepper_revitalizer.png?raw=true");
+        row35.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/red%20pepper%20revital.jpg?raw=true");
         row35.put("ingImg", "redpepperrevitalizer");
         row35.put("steps", "• Take all the ingredients, wash them properly, and cut them into small pieces.\n" +
                 "• Blend them in a cold press juicer.\n" +
@@ -1127,7 +1129,7 @@ public class DataStorage {
                         "Lemon (9.04 Gms, 45.20 Gms)"
         );
         row36.put("category", "juice");
-        row36.put("image", "https://github.com/yourimagepath/cherry_tomato_sunrise.png?raw=true");
+        row36.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/cherry%20tomato%20sunrise.jpg?raw=true");
         row36.put("ingImg", "cherrytomatosunrise");
         row36.put("steps", "• Take all the ingredients, wash them properly, and cut them into small pieces.\n" +
                 "• Blend them in a cold press juicer.\n" +
@@ -1137,6 +1139,7 @@ public class DataStorage {
         dataTable.add(row36);
 
         // Valencia Orange Juice
+        // check required on image
         HashMap<String, String> row37 = new HashMap<>();
         row37.put("table_hd_1", "Ingredients");
         row37.put("table_hd_2", "Specification");
@@ -1148,7 +1151,7 @@ public class DataStorage {
                 "Orange (500.00 Gms)"
         );
         row37.put("category", "juice");
-        row37.put("image", "https://github.com/yourimagepath/valencia_orange_juice.png?raw=true");
+        row37.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/sunshine%20burst.jpg?raw=true");
         row37.put("ingImg", "valenciaorangejuice");
         row37.put("steps", "• Take the orange, peel and wash it.\n" +
                 "• Blend them in a cold press juicer.\n" +
@@ -1170,7 +1173,7 @@ public class DataStorage {
                         "Pineapple (160.00 Gms)"
         );
         row38.put("category", "juice");
-        row38.put("image", "https://github.com/yourimagepath/tropical_paradise.png?raw=true");
+        row38.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/tropical%20paradise.jpg?raw=true");
         row38.put("ingImg", "tropicalparadise");
         row38.put("steps", "• Take orange and pineapple, peel and wash them.\n" +
                 "• Blend them in a cold press juicer.\n" +
@@ -1192,7 +1195,7 @@ public class DataStorage {
                         "Mint (5.00 Gms, 25.00 Gms)"
         );
         row39.put("category", "juice");
-        row39.put("image", "https://github.com/yourimagepath/watermelon_mint.png?raw=true");
+        row39.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/watermelon%20mint.jpg?raw=true");
         row39.put("ingImg", "watermelonmint");
         row39.put("steps", "• Take the watermelon, peel, and cut it into small pieces.\n" +
                 "• Blend with mint and pomegranate in a juicer.\n" +
@@ -1226,7 +1229,7 @@ public class DataStorage {
                         "Oregano Spice Sprinkler (2.00 Gms)"
         );
         row40.put("category", "soup");
-        row40.put("image", "https://github.com/yourimagepath/roasted_cherry_tomato_basil.png?raw=true");
+        row40.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Soup%20compress%20images/roasted%20cherry%20and%20tomato%20and%20basil%20soup.jpg?raw=true");
         row40.put("ingImg", "roastedcherrytomatobasil");
         row40.put("steps", "• Chop onions and garlic.\n" +
                 "• Cut tomatoes into quarters and boil them.\n" +
@@ -1260,7 +1263,7 @@ public class DataStorage {
                         "Veg Broth (,1.00,Gms)"
         );
         row41.put("category", "soup");
-        row41.put("image", "https://github.com/yourimagepath/confit_garlic_mushroom.png?raw=true");
+        row41.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Soup%20compress%20images/confit%20garlic%20mushroom%20soup.jpg?raw=true");
         row41.put("ingImg", "confitgarlicmushroom");
         row41.put("steps", "• Chop onions and slice mushrooms.\n" +
                 "• Heat olive oil in a pan, add garlic, and sauté for a minute.\n" +
@@ -1295,7 +1298,7 @@ public class DataStorage {
                         "Veg Broth (,1.00,Gms)"
         );
         row42.put("category", "soup");
-        row42.put("image", "https://github.com/yourimagepath/broccoli_almond.png?raw=true");
+        row42.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Soup%20compress%20images/brocolli%20and%20almond%20soup%20(2).jpg?raw=true");
         row42.put("ingImg", "broccolialmond");
         row42.put("steps", "• Chop onions, slice garlic, and cut broccoli into florets.\n" +
                 "• Heat olive oil, add onions and garlic, and sauté.\n" +
@@ -1307,8 +1310,10 @@ public class DataStorage {
         row42.put("suggested_pairing", "Paneer Pesto SW");
         dataTable.add(row42);
 
+
+
         //Warm bowls
-// 43) Paneer Thai Green Curry Barley Bowl
+        // 43) Paneer Thai Green Curry Barley Bowl
         HashMap<String, String> row43 = new HashMap<>();
         row43.put("table_hd_1", "Ingredients");
         row43.put("table_hd_2", "Specification");
@@ -1331,7 +1336,7 @@ public class DataStorage {
                         "Basil (Julienne, garnish, 2.00, Gms)"
         );
         row43.put("category", "bowl");
-        row43.put("image", "https://github.com/yourimagepath/paneer_thai_green_curry.png?raw=true");
+        row43.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Warm%20bowl%20compress%20images/paneer%20thai%20green%20curry%20barley%20bowl.jpg?raw=true");
         row43.put("ingImg", "paneerthaigreencurry");
         row43.put("steps",
                 "• Cut carrots, zucchini, and capsicum in cubes. Cut French beans approx. 1 inch.\n" +
@@ -1368,7 +1373,7 @@ public class DataStorage {
                         "Basil (Julienne, garnish, 2.00, Gms)"
         );
         row44.put("category", "bowl");
-        row44.put("image", "https://github.com/yourimagepath/chicken_thai_green_curry.png?raw=true");
+        row44.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Warm%20bowl%20compress%20images/chicken%20thai%20green%20curry%20barley%20bowl.jpg?raw=true");
         row44.put("ingImg", "chickenthaigreencurry");
         row44.put("steps",
                 "• Cut carrots, zucchini, and capsicum in cubes. Cut French beans approx. 1 inch.\n" +
@@ -1405,7 +1410,7 @@ public class DataStorage {
                         "Basil (Julienne, garnish, 2.00, Gms)"
         );
         row45.put("category", "bowl");
-        row45.put("image", "https://github.com/yourimagepath/tofu_thai_red_curry.png?raw=true");
+        row45.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Warm%20bowl%20compress%20images/tofu%20thai%20red%20curry%20black%20rice%20bowl.jpg?raw=true");
         row45.put("ingImg", "tofuthairedcurry");
         row45.put("steps",
                 "• Cut carrots, zucchini, and capsicum in cubes. Cut French beans approx. 1 inch.\n" +
@@ -1442,7 +1447,7 @@ public class DataStorage {
                         "Basil (Julienne, garnish, 2.00, Gms)"
         );
         row46.put("category", "bowl");
-        row46.put("image", "https://github.com/yourimagepath/chicken_thai_red_curry.png?raw=true");
+        row46.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Warm%20bowl%20compress%20images/chicken%20thai%20red%20curry%20black%20rice%20bowl.jpg?raw=true");
         row46.put("ingImg", "chickenthairedcurry");
         row46.put("steps",
                 "• Cut carrots, zucchini, and capsicum in cubes. Cut French beans approx. 1 inch.\n" +
@@ -1457,6 +1462,7 @@ public class DataStorage {
         dataTable.add(row46);
 
         // 47) Roasted Vegetable Thai Red Curry Black Rice Bowl
+        // image needed
         HashMap<String, String> row47 = new HashMap<>();
         row47.put("table_hd_1", "Ingredients");
         row47.put("table_hd_2", "Specification");
@@ -1663,7 +1669,7 @@ public class DataStorage {
                         "Spinach (, 30.00, Gms)"
         );
         row53.put("category", "smoothie");
-        row53.put("image", "https://github.com/yourimagepath/go_green_smoothie.png?raw=true");
+        row53.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Smoothies%20compress%20images/go%20green%20smoothie.jpg?raw=true");
         row53.put("ingImg", "gogreensmoothie");
         row53.put("steps",
                 "• Take zucchini, banana, milk, dates, coconut, kale, and spinach in a JTC blender and blend for 60 seconds.\n" +
@@ -1694,7 +1700,7 @@ public class DataStorage {
                         "Milk (, 130.00, Gms)"
         );
         row54.put("category", "smoothie");
-        row54.put("image", "https://github.com/yourimagepath/cashew_flaxseed_smoothie.png?raw=true");
+        row54.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Smoothies%20compress%20images/cashew%20flaxseed%20smoothie.jpg?raw=true");
         row54.put("ingImg", "cashewflaxseedsmoothie");
         row54.put("steps",
                 "• Take zucchini, banana, milk, dates, roasted cashew, tahini, flax seeds, cinnamon, and salt in a JTC blender and blend for 60 seconds.\n" +
@@ -1725,7 +1731,7 @@ public class DataStorage {
                         "Black Pepper (, 1.00, Gms)"
         );
         row55.put("category", "smoothie");
-        row55.put("image", "https://github.com/yourimagepath/sweet_spicy_pineapple.png?raw=true");
+        row55.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Smoothies%20compress%20images/sweet%20and%20spicy%20pineapple%20smoothie.jpg?raw=true");
         row55.put("ingImg", "sweetspicypineapple");
         row55.put("steps",
                 "• Take zucchini, banana, pineapple, milk, ginger, cayenne pepper, black pepper, and flax seeds in a JTC blender and blend for 60 seconds.\n" +
@@ -1753,7 +1759,7 @@ public class DataStorage {
                         "Dates (, 40.00, Gms)"
         );
         row56.put("category", "smoothie");
-        row56.put("image", "https://github.com/yourimagepath/vibrant_berry_smoothie.png?raw=true");
+        row56.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Smoothies%20compress%20images/vibrant%20berry%20smoothie.jpg?raw=true");
         row56.put("ingImg", "vibrantberrysmoothie");
         row56.put("steps",
                 "• Take zucchini, strawberries, beetroot, milk, and dates in a JTC blender and blend for 60 seconds.\n" +
@@ -1782,7 +1788,7 @@ public class DataStorage {
                         "Beetroot (Frozen, 30.00, Gms)"
         );
         row57.put("category", "smoothie");
-        row57.put("image", "https://github.com/yourimagepath/acai_berry_smoothie.png?raw=true");
+        row57.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Smoothies%20compress%20images/acai%20berry%20smoothie.jpg?raw=true");
         row57.put("ingImg", "acaiberrysmoothie");
         row57.put("steps",
                 "• Take zucchini, acai powder, strawberries, beetroot, milk, and dates in a JTC blender and blend for 60 seconds.\n" +
