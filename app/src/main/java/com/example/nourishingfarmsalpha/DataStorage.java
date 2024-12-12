@@ -1188,6 +1188,7 @@ public class DataStorage {
         row40.put("id", "40");
         row40.put("title", "Roasted Cherry Tomato n Basil");
         row40.put("ingredients",
+                "Cherry Tomato (,,)"+
                 "Tomato (cubes,300.00,Gms),"+
                         "Cherry Tomato (,5.00,Gms), " +
                         "Olive Oil Blend (,5.00,Gms), " +
@@ -1199,7 +1200,7 @@ public class DataStorage {
                         "Water (,160.00,Gms), " +
                         "Beetroot (,10.00,Gms), " +
                         "Basil (,10.00,Gms), " +
-                        "Oregano Spice Sprinkler (2.00 Gms)"
+                        "Oregano Spice Sprinkler (,2.00,Gms)"
         );
         row40.put("category", "soup");
         row40.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Soup%20compress%20images/roasted%20cherry%20and%20tomato%20and%20basil%20soup.jpg?raw=true");

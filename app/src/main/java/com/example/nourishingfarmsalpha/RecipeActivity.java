@@ -196,7 +196,7 @@ public class RecipeActivity extends AppCompatActivity {
         Pattern wrapPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?)(g|No\\.?)?,\\s*(\\w+)\\)");
         Pattern sandwichPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*)?,?(\\d+(?:\\.\\d+)?),?([a-zA-Z]+)?\\)");
         Pattern juicePattern = Pattern.compile("([a-zA-Z ]+) \\(([^,)]+)(?:,\\s*([^)]+))?\\)");
-        Pattern soupPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),([0-9.]+),([a-zA-Z]+)\\)");
+        Pattern soupPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),?([0-9.]*),?([a-zA-Z]*)\\)");
         Pattern bowlPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?),\\s*([a-zA-Z]+)\\)");
         Pattern smoothiePattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?),\\s*([a-zA-Z]+)\\)");
 
@@ -243,9 +243,10 @@ public class RecipeActivity extends AppCompatActivity {
                 tableRow.addView(createTextView(matcher.group(3))); // Five Serving Amount and Unit
                 tableRow.addView(createTextView("-")); // Empty cell as a placeholder for consistency
             } else if (category.equals("soup")) {
+                // In the soup category handling
                 tableRow.addView(createTextView(matcher.group(2).isEmpty() ? "-" : matcher.group(2))); // Specification
-                tableRow.addView(createTextView(matcher.group(3))); // Quantity
-                tableRow.addView(createTextView(matcher.group(4))); // Unit
+                tableRow.addView(createTextView(matcher.group(3).isEmpty() ? "-" : matcher.group(3))); // Quantity
+                tableRow.addView(createTextView(matcher.group(4).isEmpty() ? "-" : matcher.group(4))); // Unit
             } else if (category.equals("bowl") || category.equals("smoothie")) {
                 tableRow.addView(createTextView(matcher.group(2))); // Specification
                 tableRow.addView(createTextView(matcher.group(3))); // Quantity
