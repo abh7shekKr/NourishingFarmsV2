@@ -575,14 +575,14 @@ public class DataStorage {
         row17.put("id", "17");
         row17.put("title", "Roasted Veg Wrap");
         row17.put("ingredients",
-                "Wrap (no,1 No.,No)," +
+                "Wrap (no,1,no)," +
                         "Harissa sauce (spread,25g,Gms)," +
-                        "Lettuce (20g,Gms)," +
+                        "Lettuce (,20g,Gms)," +
                         "Onion sliced (rings,20g,Gms)," +
-                        "Roasted Vegetables (60g,Gms)," +
-                        "Mix Herbs (2g,Gms)," +
-                        "Balsamic Glaze (2g,Gms)," +
-                        "Cheese Slice (10g,Gms)"
+                        "Roasted Vegetables (,60g,Gms)," +
+                        "Mix Herbs (,2g,Gms)," +
+                        "Balsamic Glaze (,2g,Gms)," +
+                        "Cheese Slice (,10g,Gms)"
         );
         row17.put("category", "wraps");
         row17.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/egg%20and%20cheese%20wrap.jpg?raw=true");
@@ -605,16 +605,16 @@ public class DataStorage {
         row18.put("id", "18");
         row18.put("title", "Pesto Paneer Wrap");
         row18.put("ingredients",
-                "Wrap (no,1 No.,No)," +
-                        "Pesto (20g,Gms)," +
-                        "Lettuce (15g,Gms)," +
-                        "Onion Slice (20g,Gms)," +
-                        "Tomato Slice (25g,Gms)," +
+                "Wrap (no,1,Non)," +
+                        "Pesto (,20g,Gms)," +
+                        "Lettuce (,15g,Gms)," +
+                        "Onion Slice (,20g,Gms)," +
+                        "Tomato Slice (,25g,Gms)," +
                         "Pesto Paneer Slice (Cooked,60g,Gms)," +
-                        "Herbs (2g,Gms)," +
-                        "Balsamic Glaze (2g,Gms)," +
-                        "Cheese Slice (10g,Gms)," +
-                        "Cucumber (15g,Gms)"
+                        "Herbs (,2g,Gms)," +
+                        "Balsamic Glaze (,2g,Gms)," +
+                        "Cheese Slice (,10g,Gms)," +
+                        "Cucumber (,15g,Gms)"
         );
         row18.put("category", "wraps");
         row18.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/pesto%20paneer%20wrap.jpg?raw=true");

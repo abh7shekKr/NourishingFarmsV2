@@ -193,7 +193,7 @@ public class RecipeActivity extends AppCompatActivity {
     private void populateIngredientsTable(TableLayout ingredientsTable, String ingredients, String category) {
         // Existing patterns for other categories
         Pattern saladPattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g)\\)");
-        Pattern wrapPattern = Pattern.compile("([a-zA-Z ]+) \\(([a-zA-Z,]+)?(?:,)?(\\d+(?:\\.\\d+)?g)(?:,)?(\\w+)?\\)");
+        Pattern wrapPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?)(g|No\\.?)?,\\s*(\\w+)\\)");
         Pattern sandwichPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*)?,?(\\d+(?:\\.\\d+)?),?([a-zA-Z]+)?\\)");
         Pattern juicePattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?\\s*[a-zA-Z]+), (\\d+(?:\\.\\d+)?\\s*[a-zA-Z]+)\\)");
         Pattern soupPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),([0-9.]+),([a-zA-Z]+)\\)");
