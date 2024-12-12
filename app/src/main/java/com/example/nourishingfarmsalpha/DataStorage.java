@@ -637,15 +637,15 @@ public class DataStorage {
         row19.put("id", "19");
         row19.put("title", "Pesto Chicken Wrap");
         row19.put("ingredients",
-                "Wrap (1 No.,No)," +
-                        "Pesto Sauce (20g,Gms)," +
-                        "Lettuce (15g,Gms)," +
-                        "Onion Slice (20g,Gms)," +
-                        "Tomato Slice (30g,Gms)," +
+                "Wrap (no,1,Non)," +
+                        "Pesto Sauce (,20g,Gms)," +
+                        "Lettuce (,15g,Gms)," +
+                        "Onion Slice (,20g,Gms)," +
+                        "Tomato Slice (,30g,Gms)," +
                         "Pesto Chicken Slice (Cooked,60g,Gms)," +
-                        "Herbs (2g,Gms)," +
-                        "Glaze (2g,Gms)," +
-                        "Cheese Slice (10g,Gms)," +
+                        "Herbs (,2g,Gms)," +
+                        "Glaze (,2g,Gms)," +
+                        "Cheese Slice (,10g,Gms)," +
                         "Cucumber (Sliced,15g,Gms)"
         );
         row19.put("category", "wraps");
@@ -669,15 +669,15 @@ public class DataStorage {
         row20.put("id", "20");
         row20.put("title", "Paneer Harissa Wrap");
         row20.put("ingredients",
-                "Wrap (1 No.,No)," +
-                        "Harissa Sauce (20g,Gms)," +
-                        "Lettuce (15g,Gms)," +
+                "Wrap (no,1,Non)," +
+                        "Harissa Sauce (,20g,Gms)," +
+                        "Lettuce (,15g,Gms)," +
                         "Onion Slice (Rings,20g,Gms)," +
-                        "Tomato Slice (30g,Gms)," +
-                        "Harissa Paneer Slice (60g,Gms)," +
-                        "Herbs (2g,Gms)," +
-                        "Glaze (2g,Gms)," +
-                        "Cheese Slice (10g,Gms)," +
+                        "Tomato Slice (,30g,Gms)," +
+                        "Harissa Paneer Slice (,60g,Gms)," +
+                        "Herbs (,2g,Gms)," +
+                        "Glaze (,2g,Gms)," +
+                        "Cheese Slice (,10g,Gms)," +
                         "Cucumber (Sliced,15g,Gms)"
         );
         row20.put("category", "wraps");
@@ -701,15 +701,15 @@ public class DataStorage {
         row21.put("id", "21");
         row21.put("title", "Chicken Harissa Wrap");
         row21.put("ingredients",
-                "Wrap (1 No.,No)," +
-                        "Harissa Sauce (20g,Gms)," +
-                        "Lettuce (15g,Gms)," +
+                "Wrap (no,1,Non)," +
+                        "Harissa Sauce (,20g,Gms)," +
+                        "Lettuce (,15g,Gms)," +
                         "Onion Slice (Rings,20g,Gms)," +
-                        "Tomato Slice (30g,Gms)," +
-                        "Harissa Chicken Slice (60g,Gms)," +
-                        "Herbs (2g,Gms)," +
-                        "Glaze (2g,Gms)," +
-                        "Cheese Slice (10g,Gms)," +
+                        "Tomato Slice (,30g,Gms)," +
+                        "Harissa Chicken Slice (,60g,Gms)," +
+                        "Herbs (,2g,Gms)," +
+                        "Glaze (,2g,Gms)," +
+                        "Cheese Slice (,10g,Gms)," +
                         "Cucumber (Sliced,15g,Gms)"
         );
         row21.put("category", "wraps");
@@ -734,13 +734,13 @@ public class DataStorage {
         row22.put("id", "22");
         row22.put("title", "Egg n cheese Wrap");
         row22.put("ingredients",
-                "Wrap (No,1 No.,No)," +
+                "Wrap (no,1,Non)," +
                         "Harissa (Spread,20g,Gms)," +
-                        "Lettuce (15g,Gms)," +
+                        "Lettuce (,15g,Gms)," +
                         "Onion Slice (Rings,15g,Gms)," +
-                        "Egg (Omlette,1 No.,Gms)," +
-                        "Sundried Tomato (10g,Gms)," +
-                        "Cheese Sliced (10g,Gms)"
+                        "Egg (Omlette,1,Gms)," +
+                        "Sundried Tomato (,10g,Gms)," +
+                        "Cheese Sliced (,10g,Gms)"
         );
         row22.put("category", "wraps");
         row22.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Wrap%20compress%20images/egg%20and%20cheese%20wrap.jpg?raw=true");
@@ -752,38 +752,6 @@ public class DataStorage {
                 "• Roll tightly toward top edge. Apply little sauce on edge to stick.\n" +
                 "• Cut angular and serve with pepper and cucumber pickles.\n");
         dataTable.add(row22);
-
-        // Classic Bombay Wrap
-        // same images copied images, need to be changed futher
-        HashMap<String, String> row23 = new HashMap<>();
-        row23.put("table_hd_1","Ingredients");
-        row23.put("table_hd_2","Specification");
-        row23.put("table_hd_3","Quantity");
-        row23.put("table_hd_4","Unit");
-        row23.put("id", "23");
-        row23.put("title", "Classic Bombay Sandwich");
-        row23.put("ingredients",
-                "Wrap (No,1 No.,No)," +
-                        "Green Chatni (25g,Gms)," +
-                        "Lettuce (15g,Gms)," +
-                        "Onion Slice (20g,Gms)," +
-                        "Tomato Slice (30g,Gms)," +
-                        "Cucumber Slice (20g,Gms)," +
-                        "Potato Slice (Boiled,20g,Gms)," +
-                        "Garam Masala, chaat Masala (2g,Gms)," +
-                        "Cheese Slice (10g)"
-        );
-        row23.put("category", "sandwich");
-        row23.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/sandwich%20compressed%20images/classic%20bombay%20sandwich.jpg?raw=true");
-        row23.put("ingImg", "classicbombaysandwich");
-        row23.put("steps", "• Warm both bread slices on grill pan on both sides.\n" +
-                "• Apply Green chutney on bread, layer with lettuce, onion rings, tomato slices, cucumber slices, boiled potato slices.\n" +
-                "• Sprinkle garam masala and chaat masala.\n" +
-                "• Add cheese slice.\n" +
-                "• Cover the sandwich with another slice and cut into triangular halves.\n" +
-                "• Serve with pepper and cucumber pickles.\n");
-        dataTable.add(row23);
-
 
 
         // sandwiches
@@ -797,7 +765,7 @@ public class DataStorage {
         row25.put("id", "25");
         row25.put("title", "ROASTED VEG SANDWICH");
         row25.put("ingredients",
-                "Bread (no.,2.00,No.)," +
+                "Bread (no,2.00,None)," +
                         "Harissa sauce (Spread,25.00,Gms)," +
                         "Lettuce (,20.00,Gms)," +
                         "Onion sliced (Rings,20.00,Gms)," +
@@ -827,7 +795,7 @@ public class DataStorage {
         row26.put("id", "26");
         row26.put("title", "Pesto Paneer Sandwich");
         row26.put("ingredients",
-                "Bread (2 Slice,No.,2.00,No.)," +
+                "Bread (2-Slice,2.00,None)," +
                         "Pesto (,20.00,Gms)," +
                         "Lettuce (,15.00,Gms)," +
                         "Onion Slice (,20.00,Gms)," +
@@ -859,7 +827,7 @@ public class DataStorage {
         row27.put("id", "27");
         row27.put("title", "Pesto Chicken Sandwich");
         row27.put("ingredients",
-                "Bread (2 Slice,,2.00,No.)," +
+                "Bread (2-Slice,2.00,None)," +
                         "Pesto Sauce (,20.00,Gms)," +
                         "Lettuce (,15.00,Gms)," +
                         "Onion Slice (,20.00,Gms)," +
@@ -891,7 +859,7 @@ public class DataStorage {
         row28.put("id", "28");
         row28.put("title", "Paneer Harissa Sandwich");
         row28.put("ingredients",
-                "Bread (2 Slice,,2.00,No.)," +
+                "Bread (2-Slice,2.00,None)," +
                         "Harissa Sauce (,20.00,Gms)," +
                         "Lettuce (,15.00,Gms)," +
                         "Onion Slice (Rings,20.00,Gms)," +
@@ -923,7 +891,7 @@ public class DataStorage {
         row29.put("id", "29");
         row29.put("title", "Chicken Harissa Sandwich");
         row29.put("ingredients",
-                "Bread (2 Slice,,2.00,No.)," +
+                "Bread (2-Slice,2.00,None)," +
                         "Harissa Sauce (,20.00,Gms)," +
                         "Lettuce (,15.00,Gms)," +
                         "Onion Slice (Rings,20.00,Gms)," +
@@ -955,7 +923,7 @@ public class DataStorage {
         row30.put("id", "30");
         row30.put("title", "Egg n cheese Sandwich");
         row30.put("ingredients",
-                "Bread Slices (No,2.00,No.)," +
+                "Bread Slices (None,2.00,None)," +
                         "Harissa (Spread,20.00,Gms)," +
                         "Lettuce (,15.00,Gms)," +
                         "Onion Slice (Rings,15.00,Gms)," +
@@ -983,7 +951,7 @@ public class DataStorage {
         row31.put("id", "31");
         row31.put("title", "Classic Bombay Sandwich");
         row31.put("ingredients",
-                "Bread (2 Slice,,2.00,No.)," +
+                "Bread (2-Slice,2.00,None)," +
                         "Green Chatni (,25.00,Gms)," +
                         "Lettuce (,15.00,Gms)," +
                         "Onion Slice (,20.00,Gms)," +
@@ -1014,7 +982,7 @@ public class DataStorage {
         row32.put("id", "32");
         row32.put("title", "Capresse Sandwich");
         row32.put("ingredients",
-                "Bread (2 Slice,No.,2.00,No.)," +
+                "Bread (2-Slice,2.00,None)," +
                         "Pesto (Spread,20.00,Gms)," +
                         "Arugula Leave (,20.00,Gms)," +
                         "Tomato Slice (,40.00,Gms)," +
@@ -1041,7 +1009,6 @@ public class DataStorage {
         row33.put("table_hd_1", "Ingredients");
         row33.put("table_hd_2", "Single Serving");
         row33.put("table_hd_3", "5 Serving");
-        row33.put("table_hd_4", "-");
         row33.put("id", "33");
         row33.put("title", "Green Goodness");
         row33.put("ingredients",
@@ -1053,7 +1020,9 @@ public class DataStorage {
                         "Apple (135.54 Gms, 677.70 Gms)," +
                         "Orange (90.36 Gms, 451.80 Gms)," +
                         "Lemon (6.02 Gms, 30.10 Gms)," +
-                        "Ginger (6.52 Gms, 32.60 Gms)"
+                        "Ginger (6.52 Gms, 32.60 Gms)" +
+                        "Total Ingredients in GM (485.48 Gms, 2427.40 Gms)" +
+                        "Juice in ML (290.10 ML, 1450.50 ML)"
         );
         row33.put("category", "juice");
         row33.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/green%20goodness.jpg?raw=true");
@@ -1078,7 +1047,9 @@ public class DataStorage {
                         "Cucumber (111.94 Gms, 559.70 Gms)," +
                         "Orange (119.40 Gms, 597.00 Gms)," +
                         "Pomegranate (19.40 Gms, 97.00 Gms)," +
-                        "Lemon (5.97 Gms, 29.85 Gms)"
+                        "Lemon (5.97 Gms, 29.85 Gms)" +
+                        "Total Ingredients in GM (500.00 Gms, 2500.00 Gms)" +
+                        "Juice in ML (300.00 ML, 1500.00 ML)"
         );
         row34.put("category", "juice");
         row34.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/beet%20bliss.jpg?raw=true");
@@ -1102,7 +1073,9 @@ public class DataStorage {
                         "Carrot (223.21 Gms, 1116.05 Gms)," +
                         "Cucumber (111.61 Gms, 558.05 Gms)," +
                         "Apple (126.49 Gms, 632.45 Gms)," +
-                        "Lemon (8.93 Gms, 44.65 Gms)"
+                        "Lemon (8.93 Gms, 44.65 Gms)" +
+                        "Total Ingredients in GM (500.00 Gms, 2500.00 Gms)" +
+                        "Juice in ML (300.00 ML, 1500.00 ML)"
         );
         row35.put("category", "juice");
         row35.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/red%20pepper%20revital.jpg?raw=true");
@@ -1126,7 +1099,9 @@ public class DataStorage {
                         "Carrot (146.08 Gms, 730.40 Gms)," +
                         "Cucumber (128.01 Gms, 640.05 Gms)," +
                         "Apple (156.63 Gms, 783.15 Gms)," +
-                        "Lemon (9.04 Gms, 45.20 Gms)"
+                        "Lemon (9.04 Gms, 45.20 Gms)" +
+                        "Total Ingredients in GM (500.00 Gms, 2500.00 Gms)" +
+                        "Juice in ML (300.00 ML, 1500.00 ML)"
         );
         row36.put("category", "juice");
         row36.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/cherry%20tomato%20sunrise.jpg?raw=true");
@@ -1142,13 +1117,12 @@ public class DataStorage {
         // check required on image
         HashMap<String, String> row37 = new HashMap<>();
         row37.put("table_hd_1", "Ingredients");
-        row37.put("table_hd_2", "Specification");
-        row37.put("table_hd_3", "Quantity");
-        row37.put("table_hd_4", "Unit");
+        row37.put("table_hd_2", "Quantity");
+        row37.put("table_hd_3", "Unit");
         row37.put("id", "37");
         row37.put("title", "Valencia Orange Juice");
         row37.put("ingredients",
-                "Orange (500.00 Gms)"
+                "Orange (500G, Gms),"
         );
         row37.put("category", "juice");
         row37.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/sunshine%20burst.jpg?raw=true");
@@ -1163,14 +1137,13 @@ public class DataStorage {
         // Tropical Paradise
         HashMap<String, String> row38 = new HashMap<>();
         row38.put("table_hd_1", "Ingredients");
-        row38.put("table_hd_2", "Specification");
-        row38.put("table_hd_3", "Quantity");
-        row38.put("table_hd_4", "Unit");
+        row38.put("table_hd_2", "Quantity");
+        row38.put("table_hd_3", "Unit");
         row38.put("id", "38");
         row38.put("title", "Tropical Paradise");
         row38.put("ingredients",
-                "Orange (160.00 Gms)," +
-                        "Pineapple (160.00 Gms)"
+                "Orange (160.00, Gms)," +
+                        "Pineapple (160.00, Gms)"
         );
         row38.put("category", "juice");
         row38.put("image", "https://github.com/abh7shekKr/NourishingFarmAssets/blob/main/Juices%20compressed%20images/tropical%20paradise.jpg?raw=true");
