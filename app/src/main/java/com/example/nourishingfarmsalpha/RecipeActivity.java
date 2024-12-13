@@ -124,15 +124,40 @@ public class RecipeActivity extends AppCompatActivity {
         String ingredients = "";
         String steps = "";
 
+        // Find the new TextViews
+        TextView importantIngredientsTitle = findViewById(R.id.important_ingredients_title);
+        TextView importantIngredientsData = findViewById(R.id.important_ingredients_data);
+        TextView suggestedPairingTitle = findViewById(R.id.suggested_pairing_title);
+        TextView suggestedPairingData = findViewById(R.id.suggested_pairing_data);
+
+        // Get additional details from the data table
+        String importantIngredients = "";
+        String suggestedPairing = "";
+
 
         for (HashMap<String, String> item : dataTable) {
             if (item.get("title").equals(recipeTitle)) {
                 ingredients = item.get("ingredients");
                 steps = item.get("steps");
+                importantIngredients = item.get("important_ingredients");
+                suggestedPairing = item.get("suggested_pairing");
                 imageUrl = item.get("image");
                 ingImg = item.get("ingImg");
                 break;
             }
+        }
+
+        // Populate additional details
+        if (importantIngredients != null && !importantIngredients.isEmpty()) {
+            importantIngredientsTitle.setVisibility(View.VISIBLE);
+            importantIngredientsData.setText(importantIngredients);
+            importantIngredientsData.setVisibility(View.VISIBLE);
+        }
+
+        if (suggestedPairing != null && !suggestedPairing.isEmpty()) {
+            suggestedPairingTitle.setVisibility(View.VISIBLE);
+            suggestedPairingData.setText(suggestedPairing);
+            suggestedPairingData.setVisibility(View.VISIBLE);
         }
 
         // Set the steps in the corresponding TextView
