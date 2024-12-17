@@ -124,15 +124,40 @@ public class RecipeActivity extends AppCompatActivity {
         String ingredients = "";
         String steps = "";
 
+        // Find the new TextViews
+        TextView importantIngredientsTitle = findViewById(R.id.important_ingredients_title);
+        TextView importantIngredientsData = findViewById(R.id.important_ingredients_data);
+        TextView suggestedPairingTitle = findViewById(R.id.suggested_pairing_title);
+        TextView suggestedPairingData = findViewById(R.id.suggested_pairing_data);
+
+        // Get additional details from the data table
+        String importantIngredients = "";
+        String suggestedPairing = "";
+
 
         for (HashMap<String, String> item : dataTable) {
             if (item.get("title").equals(recipeTitle)) {
                 ingredients = item.get("ingredients");
                 steps = item.get("steps");
+                importantIngredients = item.get("important_ingredients");
+                suggestedPairing = item.get("suggested_pairing");
                 imageUrl = item.get("image");
                 ingImg = item.get("ingImg");
                 break;
             }
+        }
+
+        // Populate additional details
+        if (importantIngredients != null && !importantIngredients.isEmpty()) {
+            importantIngredientsTitle.setVisibility(View.VISIBLE);
+            importantIngredientsData.setText(importantIngredients);
+            importantIngredientsData.setVisibility(View.VISIBLE);
+        }
+
+        if (suggestedPairing != null && !suggestedPairing.isEmpty()) {
+            suggestedPairingTitle.setVisibility(View.VISIBLE);
+            suggestedPairingData.setText(suggestedPairing);
+            suggestedPairingData.setVisibility(View.VISIBLE);
         }
 
         // Set the steps in the corresponding TextView
@@ -193,10 +218,10 @@ public class RecipeActivity extends AppCompatActivity {
     private void populateIngredientsTable(TableLayout ingredientsTable, String ingredients, String category) {
         // Existing patterns for other categories
         Pattern saladPattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g), (\\d+(?:\\.\\d+)?g)\\)");
-        Pattern wrapPattern = Pattern.compile("([a-zA-Z ]+) \\(([a-zA-Z,]+)?(?:,)?(\\d+(?:\\.\\d+)?g)(?:,)?(\\w+)?\\)");
+        Pattern wrapPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?)(g|No\\.?)?,\\s*(\\w+)\\)");
         Pattern sandwichPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*)?,?(\\d+(?:\\.\\d+)?),?([a-zA-Z]+)?\\)");
-        Pattern juicePattern = Pattern.compile("([a-zA-Z ]+) \\((\\d+(?:\\.\\d+)?\\s*[a-zA-Z]+), (\\d+(?:\\.\\d+)?\\s*[a-zA-Z]+)\\)");
-        Pattern soupPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),([0-9.]+),([a-zA-Z]+)\\)");
+        Pattern juicePattern = Pattern.compile("([a-zA-Z ]+) \\(([^,)]+)(?:,\\s*([^)]+))?\\)");
+        Pattern soupPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),?([0-9.]*),?([a-zA-Z]*)\\)");
         Pattern bowlPattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?),\\s*([a-zA-Z]+)\\)");
         Pattern smoothiePattern = Pattern.compile("([a-zA-Z ]+) \\(([^,]*),\\s*(\\d+(?:\\.\\d+)?),\\s*([a-zA-Z]+)\\)");
 
@@ -243,9 +268,10 @@ public class RecipeActivity extends AppCompatActivity {
                 tableRow.addView(createTextView(matcher.group(3))); // Five Serving Amount and Unit
                 tableRow.addView(createTextView("-")); // Empty cell as a placeholder for consistency
             } else if (category.equals("soup")) {
+                // In the soup category handling
                 tableRow.addView(createTextView(matcher.group(2).isEmpty() ? "-" : matcher.group(2))); // Specification
-                tableRow.addView(createTextView(matcher.group(3))); // Quantity
-                tableRow.addView(createTextView(matcher.group(4))); // Unit
+                tableRow.addView(createTextView(matcher.group(3).isEmpty() ? "-" : matcher.group(3))); // Quantity
+                tableRow.addView(createTextView(matcher.group(4).isEmpty() ? "-" : matcher.group(4))); // Unit
             } else if (category.equals("bowl") || category.equals("smoothie")) {
                 tableRow.addView(createTextView(matcher.group(2))); // Specification
                 tableRow.addView(createTextView(matcher.group(3))); // Quantity
